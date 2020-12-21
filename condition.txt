@@ -1,0 +1,7 @@
+รายได้ int
+เป้าหมาย boolean
+เงินปัน boolean
+อายุ int
+รูปแบบการจ่าย boolean
+ตรวจสุขภาพ boolean
+สัญญาเพิ่มเติม boolean 
