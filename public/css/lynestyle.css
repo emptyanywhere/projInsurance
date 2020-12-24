@@ -1,0 +1,13 @@
+.footer-container {
+    background-color: #eaeaee;
+    height: 200px;
+}
+
+.container {
+    background-color: #eaeaee;
+}
+
+#about {
+    font-optical-sizing: 10px;
+    color: rgb(150, 144, 142);
+}
