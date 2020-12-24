@@ -8,26 +8,31 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #fff;
+                /*background-color: #fff;*/
+                background: #F5F5F5;
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
                 height: 100vh;
                 margin: 0;
+                width: 100%;
             }
 
             .full-height {
-                height: 100vh;
+                height: 40vh;
+                /*height: 50vh;*/
             }
 
             .flex-center {
                 align-items: center;
                 display: flex;
                 justify-content: center;
+                background: #F5F5F5;
             }
 
             .position-ref {
@@ -36,12 +41,21 @@
 
             .top-right {
                 position: absolute;
-                right: 10px;
-                top: 18px;
+                right: 120px;
+                top: 75px;
+            }
+
+            .topic {
+                padding-top: 30px;
+                font-weight: bold;
+                font-size: 25px;
+                position: relative;
+                left: 140px;
             }
 
             .content {
                 text-align: center;
+                /*background-color: #ADD8E6;*/
             }
 
             .title {
@@ -61,36 +75,101 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+
+            .header {
+                padding: 70px;
+                background: white;
+                color: black;
+            }
+
+            .container {
+                padding-top: 50px;
+                background: silver;
+                height: 430px;
+            }
+
+            .top-h {
+                font-size: 20px;
+                background: dimgray;
+                color: dimgray;
+                width: 100%;
+            }
+
+            .top-rf {
+                font-size: 100px;
+                background: dimgray;
+                color: dimgray;
+            }
+
+            .top-f {
+                font-size: 40px;
+                background-color: dimgray;
+                color: write;
+                height: 175px;
+            }
+
+            .footer-contact {
+                position: absolute;
+                right: 150px;
+                bottom: 0px;
+                color: white;
+                font-weight: bold;
+                font-size: 21px;
+                margin: 0;
+                background-color: gray;
+            }
+
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+        
+        <!-- <div class="top-h">top</div> -->
+
+        <div class="header">
             @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">ระบบแอดมิน</a>
-                    @else
-                        <a href="{{ route('login') }}">เข้าสู่ระบบ</a>
+                    <div class="top-right links">
+                        @auth
+                            <a href="{{ url('/home') }}">ระบบแอดมิน</a>
+                        @else
+                            <a href="{{ route('login') }}">เข้าสู่ระบบ</a>
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">ลงทะเบียน</a>
-                        @endif
-                    @endauth
-                </div>
+                            <!--@if (Route::has('register'))
+                                <a href="{{ route('register') }}">ลงทะเบียน</a>
+                            @endif-->
+                        @endauth
+                    </div>
             @endif
+        </div>
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Life Insurance
-                </div>
+        <div class="nav-link topic">
+            <p1>LIFE INSURANCE</p1>
+        </div>
+        
+        <div class="container">
+            <div class="flex-center position-ref full-height">
+                <div class="content">
+                    <div class="title m-b-md">
+                        Life Insurance
+                    </div>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">ค้นหาแผนประกัน</a>
-                    <a href="https://laracasts.com">ข้อมูลข่าวสาร</a>
-                    <a href="/calinsure">คำนวนเบี้ยประกัน</a>
-                    <a href="/insurance/public/adminHome">ช่องทางติดต่อ</a>
+                    <div class="links">
+                        <a href="https://laravel.com/docs">ค้นหาแผนประกัน</a>
+                        <a href="https://laracasts.com">ข้อมูลข่าวสาร</a>
+                        <a href="/calinsure">คำนวนเบี้ยประกัน</a>
+                        <a href="/insurance/public/adminHome">ช่องทางติดต่อ</a>
+                    </div>
                 </div>
             </div>
+        </div><br><br><br><br><br><br>
+    
+    <!-- footer -->
+    <br><br><br><br>
+
+        <div class="top-f">
+            <div class="footer-contact">
+                
+            </div>
         </div>
+
     </body>
 </html>
