@@ -32,13 +32,17 @@
                 <td>
                     <form action="{{route('insplan.destroy', $row->id)}}" method="post">
                         @csrf @method('DELETE')
-                        <input type="submit" value="ลบ" data-planname="{{$row->insplanname}}" class="btn btn-secondary deleteForm">
+                        <input type="submit" value="ลบ" data-planname="{{$row->insplanname}}" class="btn btn-secondary deleteFormInsplan">
                     </form>
                 </td>
                 </tr>
             @endforeach
             </tbody>
         </table>
+
+        <div align="center">
+            <a href="/administrator" class='btn btn-dark'>ย้อนกลับ</a>
+        </div>
 
     </div>
     

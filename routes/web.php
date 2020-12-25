@@ -20,9 +20,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/register', 'RegisterController@index')->middleware('auth');
 Route::resource('administrator', 'AdministratorController')->middleware('auth');
 Route::resource('contact', 'ContactController')->middleware('auth');
 Route::resource('insplan', 'InsplanController')->middleware('auth');
 Route::resource('news', 'NewsController')->middleware('auth');
 Route::resource('calinsure', 'CalinsureController');
-Route::resource('conditionform', 'ConditionformController');

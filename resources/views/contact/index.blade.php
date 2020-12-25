@@ -37,7 +37,7 @@
                 -->
                     <form action="{{route('contact.destroy', $row->id)}}" method="post">
                         @csrf @method('DELETE')
-                        <input type="submit" value="ลบ" data-contactname="{{$row->name}}" class="btn btn-secondary deleteForm">
+                        <input type="submit" value="ลบ" data-contactname="{{$row->name}}" class="btn btn-secondary deleteFormContact">
                     </form>
 
                 </td>
@@ -45,6 +45,10 @@
             @endforeach
             </tbody>
         </table>
+
+        <div align="center">
+            <a href="/administrator" class='btn btn-dark'>ย้อนกลับ</a>
+        </div>
 
     </div>
     

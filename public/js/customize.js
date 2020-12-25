@@ -1,7 +1,7 @@
 /* syntax javascript, jquery รวมกัน function แรกเป็น syntax ของ jquery*/
 
 $(document).ready(function(){
-    $('.deleteForm').click(function(evt){
+    $('.deleteFormContact').click(function(evt){
         
         var contactname=$(this).data("contactname");
         var form=$(this).closest("form");
@@ -29,7 +29,7 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-  $('.deleteForm').click(function(evt){
+  $('.deleteFormInsplan').click(function(evt){
       
       var planname=$(this).data("planname");
       var form=$(this).closest("form");
@@ -82,5 +82,28 @@ $(document).ready(function(){
           }
         });
 
+  });
+});
+
+
+/*function target_popup(form) {
+  window.open('', 'formpopup', 'width=400,height=400,resizeable,scrollbars');
+  form.target = 'formpopup';
+}*/
+
+$(document).ready(function(){
+  $('.CalculatePopup').click(function(evt){
+      
+      var article_name=$(this).data("article_name");
+      var author=$(this).data("author"); 
+      //var int = insurance_fund;
+      //var int = premium_rate;
+      evt.preventDefault();
+
+      swal({
+          text: `เบี้ยประกันที่ต้องจ่ายต่อปี คือ premium_rate`,
+          icon: "success",
+          closebuttons: true,
+        })
   });
 });

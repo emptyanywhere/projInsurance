@@ -122,7 +122,7 @@
         </style>
     </head>
     <body>
-
+        
         <!-- <div class="top-h">top</div> -->
 
         <div class="header">
@@ -144,7 +144,7 @@
         <div class="nav-link topic">
             <p1>LIFE INSURANCE</p1>
         </div>
-
+        
         <div class="container">
             <div class="flex-center position-ref full-height">
                 <div class="content">
@@ -153,7 +153,7 @@
                     </div>
 
                     <div class="links">
-                        <a href="/conditionform">ค้นหาแผนประกัน</a>
+                        <a href="https://laravel.com/docs">ค้นหาแผนประกัน</a>
                         <a href="https://laracasts.com">ข้อมูลข่าวสาร</a>
                         <a href="/calinsure">คำนวนเบี้ยประกัน</a>
                         <a href="/insurance/public/adminHome">ช่องทางติดต่อ</a>
@@ -161,13 +161,13 @@
                 </div>
             </div>
         </div><br><br><br><br><br><br>
-
+    
     <!-- footer -->
     <br><br><br><br>
 
         <div class="top-f">
             <div class="footer-contact">
-
+                
             </div>
         </div>
 

@@ -41,6 +41,10 @@
             </tbody>
         </table>
 
+        <div align="center">
+            <a href="/administrator" class='btn btn-dark'>ย้อนกลับ</a>
+        </div>
+
     </div>
 
 @endsection

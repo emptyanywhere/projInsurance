@@ -25,4 +25,5 @@
 <div class="link" align="center">
     <a href="/administrator">>> ไปที่หน้าแรกของระบบแอดมิน <<</a>
 </div>
+
 @endsection
