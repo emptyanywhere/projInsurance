@@ -19,14 +19,14 @@
             <div class="col-md-6">
 
 
-                <div class = "form-group">
-                    {!! Form::label('Age') !!} <br>
-                    {!! Form::number('age', 100, ["class" => "form-control"]) !!}
+                <div class = "form-group">อายุ
+                    {!! Form::label('') !!} <br>
+                    {!! Form::number('age', 10, ["class" => "form-control"]) !!}
                    </div>
 
 
-                   <div class = "form-group">
-                    {!! Form::label('Income') !!} <br>
+                   <div class = "form-group">รายได้/เดือน
+                    {!! Form::label('') !!} <br>
                     {!! Form::number('income', 9000, ["class" => "form-control"]) !!}
                    </div>
 
