@@ -25,3 +25,4 @@ Route::resource('contact', 'ContactController')->middleware('auth');
 Route::resource('insplan', 'InsplanController')->middleware('auth');
 Route::resource('news', 'NewsController')->middleware('auth');
 Route::resource('calinsure', 'CalinsureController');
+Route::resource('conditionform', 'ConditionformController');
