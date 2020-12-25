@@ -30,9 +30,9 @@
                     {!! Form::number('income', 9000, ["class" => "form-control"]) !!}
                    </div>
 
-               <div class="form-group">
-                    {!! Form::label('Goal for money plan') !!}<br>
-                    {!! Form::select('goal', ['L' => 'long plan', 'S' => 'short plan'], null, ['placeholder' => 'Select']) !!}
+               <div class="form-group">เป้าหมายระยะเวลาในการออมเงิน
+                    {!! Form::label('') !!}<br>
+                    {!! Form::select('goal', ['L' => 'ระยะยาว', 'S' => 'ระยะสั้น'], null, ['placeholder' => 'เลือกแผน']) !!}
                 </div>
 
 
@@ -53,7 +53,7 @@
                 <input type="radio" value="aaa" class="radio" id="news" name="news">  ไม่ต้องการ<br><br>
 
                 <input type="submit" value="ยืนยัน" class="btn btn-success">&nbsp;
-                <a href="/insplan" class='btn btn-dark'>ย้อนกลับ</a>&nbsp;
+                <a href="{{url('/')}}" class='btn btn-dark'>ย้อนกลับ</a>&nbsp;
                 <input type="reset" value="รีเซต" class="btn btn-danger">
 
             </div>

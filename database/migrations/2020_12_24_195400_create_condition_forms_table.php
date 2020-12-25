@@ -15,13 +15,13 @@ class CreateConditionFormsTable extends Migration
     {
         Schema::create('condition_forms', function (Blueprint $table) {
             $table->id();
-            $table->integer('age');
-            $table->integer('income');
-            $table->boolean('goal');
-            $table->boolean('divident');
-            $table->boolean('pay_type');
-            $table->boolean('check_health');
-            $table->boolean('other_plan');
+            $table->integer('age'); //อายุ
+            $table->integer('income'); //รายได้ของผู้ใช้
+            $table->boolean('goal'); //เป้าหมายระยะเวลาในการออม
+            $table->boolean('divident'); //ต้องการเงินปันผลไหม
+            $table->boolean('pay_type'); //รูปแบบการจ่าย
+            $table->boolean('check_health'); //ต้องการตรวจสุขภาพ
+            $table->boolean('other_plan'); //สัญญาเพิ่มเดิม
             $table->timestamps();
         });
     }
