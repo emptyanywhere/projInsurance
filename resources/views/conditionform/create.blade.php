@@ -21,13 +21,13 @@
 
                 <div class = "form-group">อายุ
                     {!! Form::label('') !!} <br>
-                    {!! Form::number('age', 10, ["class" => "form-control"]) !!}
+                    {!! Form::number('age', null, ["class" => "form-control"]) !!}
                    </div>
 
 
                    <div class = "form-group">รายได้/เดือน
                     {!! Form::label('') !!} <br>
-                    {!! Form::number('income', 9000, ["class" => "form-control"]) !!}
+                    {!! Form::text('income', null, ["class" => "form-control"]) !!}
                    </div>
 
                <div class="form-group">เป้าหมายระยะเวลาในการออมเงิน
