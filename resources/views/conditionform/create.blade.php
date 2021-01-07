@@ -24,14 +24,24 @@
 
                 <div class = "form-group">อายุ
                     {!! Form::label('') !!} <br>
+<<<<<<< HEAD
                     {!! Form::number('age', NULL, ["class" => "form-control"]) !!}
                 </div>
+=======
+                    {!! Form::number('age', null, ["class" => "form-control"]) !!}
+                   </div>
+>>>>>>> 17617b1a619b952c272cd9b1d3404139cf2955ff
 
 
                 <div class = "form-group">รายได้/เดือน
                     {!! Form::label('') !!} <br>
+<<<<<<< HEAD
                     {!! Form::text('income', NULL, ["class" => "form-control"]) !!}
                 </div>
+=======
+                    {!! Form::text('income', null, ["class" => "form-control"]) !!}
+                   </div>
+>>>>>>> 17617b1a619b952c272cd9b1d3404139cf2955ff
 
                 <div class="form-group">เป้าหมายระยะเวลาในการออมเงิน
                     {!! Form::label('') !!}<br>
