@@ -6,6 +6,20 @@
         <a href="/insplan/create" class="btn btn-primary my-2">เพิ่มแผนประกัน</a>
         <br><br>
 
+        <form action="/search" method="POST" role="search">
+            {{ csrf_field() }}
+            <div class="input-group">
+                <input type="text" class="form-control" name="q"
+                    placeholder="ค้นหาแผนประกัน"> <span class="input-group-btn">
+                    <button type="submit" class="btn btn-primary">
+                        <!-- <span class="glyphicon glyphicon-search"></span> -->
+                        ค้นหา
+                    </button>
+                </span>
+            </div>
+        </form>
+        <br><br>
+
         <table class="table">
             <thead class="thead-dark">
                 <tr>

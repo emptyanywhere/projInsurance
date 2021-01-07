@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 
-<center><h2>เพิ่มข้อมูลแผนประกัน</h2></center>
+<center><h2>แก้ไขข้อมูลแผนประกัน</h2></center>
 
     <div class="container">
 

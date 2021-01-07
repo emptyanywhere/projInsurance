@@ -14,6 +14,7 @@
                 <th scope="col">ส่วนนำ</th>
                 <th scope="col">เนื้อหาข่าวสาร/บทความ</th>
                 <th scope="col">ผู้เขียน</th>
+                <th scope="col">สร้างเมื่อ</th>
                 <th scope="col">แก้ไข</th>
                 <th scope="col">ลบ</th>
                 </tr>
@@ -26,6 +27,7 @@
                 <td>{{$row->abstract}}</td>
                 <td>{{$row->content}}</td>
                 <td>{{$row->author}}</td>
+                <td>{{$row->created_at}}</td>
                 <td>
                     <a href="{{route('news.edit', $row->id)}}" class="btn btn-secondary">แก้ไข</a>
                 </td>

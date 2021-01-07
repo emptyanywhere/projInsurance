@@ -96,14 +96,37 @@ $(document).ready(function(){
       
       var article_name=$(this).data("article_name");
       var author=$(this).data("author"); 
-      //var int = insurance_fund;
-      //var int = premium_rate;
+      var field1=document.getElementById("fund").value;
+      var field2=document.getElementById("rate").value;
+
+      var result=parseFloat(field1) + parseFloat(field2);
+
       evt.preventDefault();
 
+      if(!isNaN(result))
+      {
+        //
+      }
+
       swal({
-          text: `เบี้ยประกันที่ต้องจ่ายต่อปี คือ premium_rate`,
-          icon: "success",
-          closebuttons: true,
-        })
+        text: "เบี้ยประกันที่ต้องจ่ายต่อปี คือ" + result,
+        icon: "success",
+        closebuttons: true,
+      })
+
   });
 });
+
+/*function CalculatePopup(){
+
+    var field1=document.getElementById("fund").value;
+    var field2=document.getElementById("rate").value;
+
+    var result=parseFloat(field1) + parseFloat(field2);
+
+    if(!isNaN(result))
+    {
+      document.getElementById("answer").innerHTML="The answer is" + result;
+    }
+
+};*/

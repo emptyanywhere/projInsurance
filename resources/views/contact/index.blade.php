@@ -2,8 +2,8 @@
 @section('content')
 
     <div class="container">
-        <h2 align="center">ข้อมูลผู้ติดต่อ</h2>
-        <a href="/contact/create" class="btn btn-primary my-2">เพิ่มผู้ติดต่อ</a>
+        <h2 align="center">ข้อมูลผู้ดูแลระบบ</h2>
+        <a href="/contact/create" class="btn btn-primary my-2">เพิ่มผู้ดูแลระบบ</a>
         <br><br>
 
         <table class="table">

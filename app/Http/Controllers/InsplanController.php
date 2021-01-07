@@ -98,6 +98,7 @@ class InsplanController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Insplan::find($id)->delete();
+        return redirect('/insplan');
     }
 }

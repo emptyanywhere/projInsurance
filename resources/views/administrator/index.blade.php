@@ -87,7 +87,7 @@
                 <div class="links">
                     <a href="/insplan">แก้ไขข้อมูลแผนประกัน</a>
                     <a href="/news">แก้ไขข้อมูลข่าวสาร</a>
-                    <a href="/contact">แก้ไขข้อมูลผู้ติดต่อ</a>
+                    <a href="/contact">แก้ไขข้อมูลผู้ดูแลระบบ</a>
                 </div>
             </div>
         </div>
