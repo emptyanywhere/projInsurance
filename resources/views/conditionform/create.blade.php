@@ -19,29 +19,19 @@
             <div class="col-md-6">
 
                 <div class="radiotext">เพศ</div>
-                <input type="radio" value="aaa" class="radio" id="dvdY" name="divident">  ต้องการ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="radio" value="aaa" class="radio" id="dvdN" name="divident">  ไม่ต้องการ<br><br>
+                <input type="radio" value="" class="radio" id="gend" name="gmen">  ต้องการ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" value="" class="radio" id="gend" name="gwmen">  ไม่ต้องการ<br><br>
 
                 <div class = "form-group">อายุ
                     {!! Form::label('') !!} <br>
-<<<<<<< HEAD
                     {!! Form::number('age', NULL, ["class" => "form-control"]) !!}
                 </div>
-=======
-                    {!! Form::number('age', null, ["class" => "form-control"]) !!}
-                   </div>
->>>>>>> 17617b1a619b952c272cd9b1d3404139cf2955ff
 
 
                 <div class = "form-group">รายได้/เดือน
                     {!! Form::label('') !!} <br>
-<<<<<<< HEAD
                     {!! Form::text('income', NULL, ["class" => "form-control"]) !!}
                 </div>
-=======
-                    {!! Form::text('income', null, ["class" => "form-control"]) !!}
-                   </div>
->>>>>>> 17617b1a619b952c272cd9b1d3404139cf2955ff
 
                 <div class="form-group">เป้าหมายระยะเวลาในการออมเงิน
                     {!! Form::label('') !!}<br>
