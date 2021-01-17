@@ -35,7 +35,7 @@
                     <form action="{{route('news.destroy', $row->id)}}" method="post">
                         @csrf @method('DELETE')
                         <input type="submit" value="ลบ" data-author="{{$row->author}}" 
-                        data-article_name="{{$row->article_name}}" class="btn btn-secondary deleteForm">
+                        data-article_name="{{$row->article_name}}" class="btn btn-secondary deleteFormNews">
                     </form>
                 </td>
                 </tr>

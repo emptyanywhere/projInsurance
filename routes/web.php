@@ -22,8 +22,17 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/register', 'RegisterController@index')->middleware('auth');
 Route::resource('administrator', 'AdministratorController')->middleware('auth');
+
 Route::resource('contact', 'ContactController')->middleware('auth');
 Route::resource('insplan', 'InsplanController')->middleware('auth');
 Route::resource('news', 'NewsController')->middleware('auth');
 Route::resource('calinsure', 'CalinsureController');
+
 Route::resource('conditionform', 'ConditionformController');
+
+Route::resource('fdplan', 'FdplanController')->middleware('auth');
+
+Route::get('/search', 'PageController@search');
+/*Route::get('/search', 'SearchController@store');
+Route::get('/search', 'SearchController@index');*/
+Route::resource('search', 'SearchController');

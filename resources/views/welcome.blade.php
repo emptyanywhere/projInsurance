@@ -154,9 +154,10 @@
 
                     <div class="links">
                         <a href="/conditionform">ค้นหาแผนประกัน</a>
-                        <a href="https://laracasts.com">ข้อมูลข่าวสาร</a>
-                        <a href="/calinsure">คำนวณเบี้ยประกัน</a>
-                        <a href="/insurance/public/adminHome">ช่องทางติดต่อ</a>
+                        <a href="/page/search">ค้นหาแผนประกัน(ใหม่)</a>
+                        <a href="">ข้อมูลข่าวสาร</a>
+                        <a href="/calinsure/">คำนวณเบี้ยประกัน</a>
+                        <a href="">ช่องทางติดต่อ</a>
                     </div>
                 </div>
             </div>

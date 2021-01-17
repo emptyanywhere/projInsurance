@@ -57,7 +57,7 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-  $('.deleteForm').click(function(evt){
+  $('.deleteFormNews').click(function(evt){
       
       var article_name=$(this).data("article_name");
       var author=$(this).data("author"); 
@@ -75,6 +75,34 @@ $(document).ready(function(){
           if (willDelete) {
             form.submit();
             swal(`ข้อมูลของ ${author} ถูกลบแล้ว`, {
+              icon: "success",
+            });
+          } else {
+            swal("ข้อมูลยังไม่ได้ถูกลบ");
+          }
+        });
+
+  });
+});
+
+$(document).ready(function(){
+  $('.deleteFormFdplan').click(function(evt){
+      
+      var fdplanname=$(this).data("fdplanname");
+      var form=$(this).closest("form");
+      evt.preventDefault();
+
+      swal({
+          title: "แน่ใจหรือไม่",
+          text: `ต้องการลบแผนประกัน ${fdplanname} ?`,
+          icon: "warning",
+          buttons: true,
+          dangerMode: true,
+        })
+        .then((willDelete) => {
+          if (willDelete) {
+            form.submit();
+            swal(`ข้อมูลของ ${fdplanname} ถูกลบแล้ว`, {
               icon: "success",
             });
           } else {
@@ -116,17 +144,3 @@ $(document).ready(function(){
 
   });
 });
-
-/*function CalculatePopup(){
-
-    var field1=document.getElementById("fund").value;
-    var field2=document.getElementById("rate").value;
-
-    var result=parseFloat(field1) + parseFloat(field2);
-
-    if(!isNaN(result))
-    {
-      document.getElementById("answer").innerHTML="The answer is" + result;
-    }
-
-};*/

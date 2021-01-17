@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Insplan;
+use App\Fdplan;
 
 class ConditionformController extends Controller
 {
@@ -14,7 +16,7 @@ class ConditionformController extends Controller
      */
     public function index()
     {
-      return view('conditionform.create');
+        return view('conditionform.index', compact(['data']));
     }
 
     /**
@@ -24,7 +26,7 @@ class ConditionformController extends Controller
      */
     public function create()
     {
-        return view('conditionform.create');
+        //return view('conditionform.create');
     }
 
     /**
@@ -35,11 +37,19 @@ class ConditionformController extends Controller
      */
     public function store(Request $request)
     {
-        /*$request->validate([
-            'name'=>'required',
-            'email'=>'required|email',
-            'phone'=>'required'
-        ]);*/
+        $request->validate([
+            //'gender'=>'accepted',
+            //'age'=>'required|max:255',
+            //'income'=>'required|max:255|min:5',
+            //'goal'=>'required',
+            //'divident'=>'accepted',
+            //'pay_type'=>'accepted',
+            //'check_health'=>'accepted',
+            //'additional_contract'=>'required_without_all',
+        ]);
+
+        $data=Fdplan::all();
+        return view('page.search', compact(['data']));
     }
 
     /**
