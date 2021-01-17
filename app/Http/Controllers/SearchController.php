@@ -16,7 +16,9 @@ class SearchController extends Controller
         $saving_goals = DB::table('fdplans')->select('saving_goal')->distinct()->get()->pluck('saving_goal')->sort();
         $pay_ip_types = DB::table('fdplans')->select('pay_ip_type')->distinct()->get()->pluck('pay_ip_type')->sort();
 
-        $fdplan = fdplan::query();
+        //$fdplans = Fdplan::query();
+        //$fdplan = Fdplan::all(); //ข้อมูลมาหมด
+        $fdplan = Fdplan::query();
 
         if($request->filled('saving_goal')){
             $fdplan->where('saving_goal', $request->saving_goal);
@@ -30,8 +32,8 @@ class SearchController extends Controller
             'pay_ip_types' => $pay_ip_types,
             'fdplans' => $fdplan->get(),
         ]);
-
-        dd($request);
+        
+        //dd($request);
     }
 
     public function store(Request $request)

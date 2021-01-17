@@ -79,6 +79,18 @@
         </div>
     </div>
 
-    
+    <?php use App\Fdplan; ?>
+    @forelse($fdplans as $fdplan)
+        <div class="container" align="center">
+            <h1><a href="/fdplan/{{$fdplan->id}}">{{$fdplan->p_name}}</a></h1>
+        </div>
+
+        @empty
+            <div class="" align="center">
+                No search results found
+            </div>
+
+    @endforelse
+
 
 @endsection
