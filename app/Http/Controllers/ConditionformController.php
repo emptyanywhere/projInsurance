@@ -48,8 +48,8 @@ class ConditionformController extends Controller
             //'additional_contract'=>'required_without_all',
         ]);
 
-        $data=Fdplan::all();
-        return view('page.search', compact(['data']));
+        $fdplan=Fdplan::all();
+        return view('page.search');
     }
 
     /**

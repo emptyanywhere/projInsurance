@@ -1,3 +1,8 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
 @extends('layouts.app')
 @section('content')
 
@@ -42,7 +47,7 @@
                     <div class="col-l-4">
                         <select class="form-control input-lg dynamic" name="saving_goal" data-dependent="state">
                             <option value="">เลือก</option>
-                            @foreach($saving_goals = DB::table('fdplans')->select('saving_goal')->distinct()->get()->pluck('saving_goal')->sort(); as $saving_goal)
+                            @foreach($saving_goals as $saving_goal)
                                 <option value="{{$saving_goal}}"> {{$saving_goal}} </option>
                             @endforeach
                         </select>
@@ -52,7 +57,7 @@
                     <div class="col-l-4">
                         <select class="form-control input-lg dynamic" name="pay_ip_type" data-dependent="state">
                             <option value="">เลือก</option>
-                            @foreach($pay_ip_types = DB::table('fdplans')->select('pay_ip_type')->distinct()->get()->pluck('pay_ip_type')->sort(); as $pay_ip_type)
+                            @foreach($pay_ip_types as $pay_ip_type)
                                 <option value="{{$pay_ip_type}}"> {{$pay_ip_type}} </option>
                             @endforeach
                         </select>
@@ -79,10 +84,18 @@
         </div>
     </div>
 
-    <?php use App\Fdplan; ?>
     @forelse($fdplans as $fdplan)
-        <div class="container" align="center">
-            <h1><a href="/fdplan/{{$fdplan->id}}">{{$fdplan->p_name}}</a></h1>
+        <div class="container" align="float-left" style="background-color: lightblue">
+            <h1><a href="/fdplan/{{$fdplan->id}}">{{$fdplan->p_name}}</a></h1><br>
+
+            <div class="brand">
+                <h4>{{$fdplan->p_brand}}</h4>
+            </div>
+
+            <div class="descript">
+                <p>{{$fdplan->p_descript}}</p>
+            </div>
+
         </div>
 
         @empty

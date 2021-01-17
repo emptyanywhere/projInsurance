@@ -154,7 +154,7 @@
 
                     <div class="links">
                         <a href="/conditionform">ค้นหาแผนประกัน</a>
-                        <a href="/page/search">ค้นหาแผนประกัน(ใหม่)</a>
+                        <a href="http://127.0.0.1:8000/search">ค้นหาแผนประกัน(ใหม่)</a>
                         <a href="">ข้อมูลข่าวสาร</a>
                         <a href="/calinsure/">คำนวณเบี้ยประกัน</a>
                         <a href="">ช่องทางติดต่อ</a>
