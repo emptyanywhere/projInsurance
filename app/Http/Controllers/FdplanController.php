@@ -49,7 +49,17 @@ class FdplanController extends Controller
             'divident'=>'required',
             'health_ck'=>'required',
             'add_contract'=>'required',
-            'details'=>'required'
+            'details'=>'required',
+
+            'insurer_age'=>'required',
+            'annuity'=>'required',
+            'bonus'=>'required',
+            'min_amount'=>'required',
+            'tax_break'=>'required',
+            'pay_method'=>'required',
+            //'policy_ben_pic'=>'required',
+            'note'=>'required',
+            'exclusion_cov'=>'required',
         ]);
 
         Fdplan::create($request->all());
@@ -102,7 +112,17 @@ class FdplanController extends Controller
             'divident'=>'required',
             'health_ck'=>'required',
             'add_contract'=>'required',
-            'details'=>'required'
+            'details'=>'required',
+
+            'insurer_age'=>'required',
+            'annuity'=>'required',
+            'bonus'=>'required',
+            'min_amount'=>'required',
+            'tax_break'=>'required',
+            'pay_method'=>'required',
+            //'policy_ben_pic'=>'required',
+            'note'=>'required',
+            'exclusion_cov'=>'required',
         ]);
 
         Fdplan::find($id)->update($request->all());

@@ -3,6 +3,10 @@
     height: 750px;
 }
 
+p {
+    color: grey;
+}
+
 .form-group-text {
     position: absolute;
     padding-top: 20px;
@@ -32,3 +36,35 @@ h3 {
     position: relative;
     padding-left: 190px;
 }
+
+
+
+    /* ------------ icon and infomation ------------*/
+
+.icon-text {
+    position: relative;
+    width: 1100px;
+}
+
+.insurer-age {
+    position: relative;
+    background-color: pink;
+    width: 250PX;
+}
+
+.annuity {
+    position: relative;
+    background-color: pink;
+    width: 250px;
+}
+
+table, td, th {
+    border: 1px rgba(238, 238, 238, 0.952);
+    width: 50px;
+    height: 105px;
+  }
+  
+  table {
+    width: 1100px;
+    border-collapse: collapse;
+  }

@@ -48,6 +48,68 @@
                     {!! Form::text('protection', $data->protection, ["class" => "form-control"]) !!}
                 </div>
 
+                
+
+
+                <!-- more info -->
+
+                <br><center><h2>section 2</h2></center>
+
+                <div class="form-group">
+                    <label class="">อายุรับประกัน</label>
+                        {!! Form::text('insurer_age', $data->insurer_age, ["class" => "form-control"]) !!}
+                </div>
+
+                <div class="form-group">
+                    <label class="">รับเงินคืน(%)</label>
+                        {!! Form::text('annuity', $data->annuity, ["class" => "form-control"]) !!}
+                </div>
+
+                <div class="form-group">
+                    <label class="">เงินปันผล</label>
+                        {!! Form::text('bonus', $data->bonus, ["class" => "form-control"]) !!}
+                </div>
+
+                <div class="form-group">
+                    <label class="">จำนวนเงินประกันภัยขั้นต่ำ</label>
+                        {!! Form::text('min_amount', $data->min_amount, ["class" => "form-control"]) !!}
+                </div>
+
+                <div class="form-group">
+                    <label class="">สิทธิลดหย่อนภาษี</label>
+                        {!! Form::text('tax_break', $data->tax_break, ["class" => "form-control"]) !!}
+                </div>
+
+                <div class="form-group">
+                    <label class="">การชำระเบี้ยประกัน</label>
+                        {!! Form::text('pay_method', $data->pay_method, ["class" => "form-control"]) !!}
+                </div>
+
+                <label>เพิ่มรูปภาพรายละเอียดกรมธรรม์</label><br>
+                <div class="input-group">
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" name="policy_ben_pic">
+                        <label class="custom-file-label">เลือกรูปภาพ</label>
+                    </div>   
+                </div><br>
+
+                <div class="form-group">
+                    <label class="">หมายเหตุ</label>
+                        {!! Form::text('note', $data->note, ["class" => "form-control"]) !!}
+                </div>
+
+                <div class="form-group">
+                    <label class="">ข้อยกเว้นความคุ้มครอง</label>
+                        {!! Form::text('exclusion_cov', $data->exclusion_cov, ["class" => "form-control"]) !!}
+                </div>
+
+
+                
+
+                <!-- condition -->
+
+                <br><center><h2>section 3</h2></center>
+
                 <div class="form-group">
                 <label class="">อายุ</label>
                     {!! Form::text('age', $data->age, ["class" => "form-control"]) !!}

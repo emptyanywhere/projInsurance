@@ -39,14 +39,76 @@
                 </div>
 
                 <div class="form-group">
-                <label class="">จ่ายเบี้ยประกัน(ปี)</label>
-                    {!! Form::text('pay_ins_pre', NULL, ["class" => "form-control"]) !!}
+                    <label class="">จ่ายเบี้ยประกัน(ปี)</label>
+                        {!! Form::text('pay_ins_pre', NULL, ["class" => "form-control"]) !!}
                 </div>
 
                 <div class="form-group">
-                <label class="">ความคุ้มครอง(ปี)</label>
-                    {!! Form::text('protection', NULL, ["class" => "form-control"]) !!}
+                    <label class="">ความคุ้มครอง(ปี)</label>
+                        {!! Form::text('protection', NULL, ["class" => "form-control"]) !!}
                 </div>
+
+                
+                
+
+                <!-- more info -->
+                
+                <br><center><h2>section 2</h2></center>
+
+                <div class="form-group">
+                    <label class="">อายุรับประกัน</label>
+                        {!! Form::text('insurer_age', NULL, ["class" => "form-control"]) !!}
+                </div>
+
+                <div class="form-group">
+                    <label class="">รับเงินคืน(%)</label>
+                        {!! Form::text('annuity', NULL, ["class" => "form-control"]) !!}
+                </div>
+
+                <div class="form-group">
+                    <label class="">เงินปันผล</label>
+                        {!! Form::text('bonus', NULL, ["class" => "form-control"]) !!}
+                </div>
+
+                <div class="form-group">
+                    <label class="">จำนวนเงินประกันภัยขั้นต่ำ</label>
+                        {!! Form::text('min_amount', NULL, ["class" => "form-control"]) !!}
+                </div>
+
+                <div class="form-group">
+                    <label class="">สิทธิลดหย่อนภาษี</label>
+                        {!! Form::text('tax_break', NULL, ["class" => "form-control"]) !!}
+                </div>
+
+                <div class="form-group">
+                    <label class="">การชำระเบี้ยประกัน</label>
+                        {!! Form::text('pay_method', NULL, ["class" => "form-control"]) !!}
+                </div>
+
+                <label>เพิ่มรูปภาพรายละเอียดกรมธรรม์</label><br>
+                <div class="input-group">
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" name="policy_ben_pic">
+                        <label class="custom-file-label">เลือกรูปภาพ</label>
+                    </div>   
+                </div><br>
+
+                <div class="form-group">
+                    <label class="">หมายเหตุ</label>
+                        {!! Form::text('note', NULL, ["class" => "form-control"]) !!}
+                </div>
+
+                <div class="form-group">
+                    <label class="">ข้อยกเว้นความคุ้มครอง</label>
+                        {!! Form::text('exclusion_cov', NULL, ["class" => "form-control"]) !!}
+                </div>
+
+
+
+                
+                <!-- Condition -->
+
+                <br><center><h2>section 3</h2></center>
 
                 <div class="form-group">
                 <label class="">อายุ</label>

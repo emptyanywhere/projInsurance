@@ -34,8 +34,81 @@
                     <p>{{$fdplan->p_descript}}</p>
                 </div>
 
-                <div class="condition">
-                    <p>{{$fdplan->p_descript}}</p>
+                <br><h4>ข้อมูลแบบประกัน</h4><br><br>
+                <div class="icon-text" style="background-color: lightblue;">
+                    
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="insurer-age">
+                                    <span></span>
+                                    <label>อายุรับประกัน</label>
+                                    <p>{{$fdplan->insurer_age}}</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="annuity">
+                                    <span></span>
+                                    <label>รับเงินจ่ายคืน</label>
+                                    <p>{{$fdplan->annuity}}</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bonus">
+                                    <span></span>
+                                    <label>เงินปันผล</label>
+                                    <p>{{$fdplan->bonus}}</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="annuity">
+                                    <span></span>
+                                    <label>สิทธิลดหย่อนภาษี</label>
+                                    <p>{{$fdplan->tax_break}}</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="annuity">
+                                    <span></span>
+                                    <label>การซื้อสัญญาเพิ่มเติม</label>
+                                    <p>{{$fdplan->add_contract}}</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="annuity">
+                                    <span></span>
+                                    <label>การตรวจสุขภาพ</label>
+                                    <p>{{$fdplan->health_ck}}</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="annuity">
+                                    <span></span>
+                                    <label>เงินเอาประกันภัยขั้นต่ำ</label>
+                                    <p>{{$fdplan->min_amount}}</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="annuity">
+                                    <span></span>
+                                    <label>รูปแบบการชำระเบี้ยประกัน</label>
+                                    <p>{{$fdplan->pay_ip_type}}</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="annuity">
+                                    <span></span>
+                                    <label>วิธีการชำระเบี้ยประกัน</label>
+                                    <p>{{$fdplan->pay_method}}</p>
+                                </div>
+                            </td>
+                          </tr>
+                      </table>
+
                 </div>
             </div>
 
