@@ -64,7 +64,8 @@ class FdplanController extends Controller
      */
     public function show($id)
     {
-        //
+        $fdplan = Fdplan::find($id);
+        return view('fdplan.show', compact('fdplan'));
     }
 
     /**
@@ -75,7 +76,7 @@ class FdplanController extends Controller
      */
     public function edit($id)
     {
-        $data=Fdplan::find($id);
+        $data = Fdplan::find($id);
         return view('fdplan.edit', compact(['data']));
     }
 

@@ -38,6 +38,7 @@ class SearchController extends Controller
 
     public function store(Request $request)
     {
+        // This will return your screen
         return $request->all();
         return view('page.search');
     }

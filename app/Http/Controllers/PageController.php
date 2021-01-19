@@ -9,4 +9,8 @@ class PageController extends Controller
     public function search(){
         return view('page.search');
     }
+    
+    public function result(){
+        return view('page.result');
+    }
 }

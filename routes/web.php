@@ -36,3 +36,7 @@ Route::get('/search', 'PageController@search');
 /*Route::get('/search', 'SearchController@store');
 Route::get('/search', 'SearchController@index');*/
 Route::resource('search', 'SearchController');
+
+//Route::resource('result', 'SearchController');
+Route::get('/result', 'PageController@result');
+Route::resource('result', 'ResultController');

@@ -1,0 +1,34 @@
+.v {
+    background-color: rgba(238, 238, 238, 0.952);
+    height: 750px;
+}
+
+.form-group-text {
+    position: absolute;
+    padding-top: 20px;
+}
+
+.logo {
+    position: relative;
+    padding-top: 20px;
+}
+
+h3 {
+    position: relative;
+    padding-left: 190px;
+}
+
+.pay-pro {
+    position: relative;
+    padding-left: 190px;
+}
+
+.brand {
+    position: relative;
+    padding-left: 190px;
+}
+
+.descript {
+    position: relative;
+    padding-left: 190px;
+}
