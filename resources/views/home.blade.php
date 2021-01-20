@@ -22,8 +22,16 @@
 </div>
 
 <br><br>
-<div class="link" align="center">
-    <a href="/administrator">>> ไปที่หน้าแรกของระบบแอดมิน <<</a>
+<div class="container v" 
+    style="
+        background-color: rgba(238, 238, 238, 0.952);
+        height: 400px;
+    ">
+    <div class="link" align="center">
+        <br><br>
+        <a href="/administrator"><h4> --> ไปที่หน้าแรกของระบบแอดมิน </h2></a>
+    </div>
 </div>
+
 
 @endsection

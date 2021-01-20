@@ -10,8 +10,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
+        <link rel="stylesheet" type="text/css" href="<?php echo asset('css/welcome.css')?>">
         <!-- Styles -->
-        <style>
+        <!-- <style>
             html, body {
                 /*background-color: #fff;*/
                 background: #F5F5F5;
@@ -119,7 +120,7 @@
                 background-color: gray;
             }
 
-        </style>
+        </style> -->
     </head>
     <body>
         
@@ -140,10 +141,6 @@
                     </div>
             @endif
         </div>
-
-        <div class="nav-link topic">
-            <p1>LIFE INSURANCE</p1>
-        </div>
         
         <div class="container">
             <div class="flex-center position-ref full-height">
@@ -153,18 +150,16 @@
                     </div>
 
                     <div class="links">
-                        <a href="/conditionform">ค้นหาแผนประกัน</a>
-                        <a href="http://127.0.0.1:8000/search">ค้นหาแผนประกัน(ใหม่)</a>
+                        <a href="http://127.0.0.1:8000/search">ค้นหาแผนประกัน</a>
                         <a href="">ข้อมูลข่าวสาร</a>
                         <a href="/calinsure/">คำนวณเบี้ยประกัน</a>
                         <a href="">ช่องทางติดต่อ</a>
                     </div>
                 </div>
             </div>
-        </div><br><br><br><br><br><br>
+        </div>
     
     <!-- footer -->
-    <br><br><br><br>
 
         <div class="top-f">
             <div class="footer-contact">

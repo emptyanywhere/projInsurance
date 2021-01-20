@@ -1,5 +1,7 @@
 /* syntax javascript, jquery รวมกัน function แรกเป็น syntax ของ jquery*/
 
+/* pop-up sweet alert on click delete buttons in index of admin system */
+
 $(document).ready(function(){
     $('.deleteFormContact').click(function(evt){
         
@@ -142,5 +144,21 @@ $(document).ready(function(){
         closebuttons: true,
       })
 
+  });
+});
+
+
+
+/* show fdplan page */
+
+$(document).ready(function(){
+  $("#flip").click(function(){
+      $("#panel").slideToggle("slow");
+  });
+});
+
+$(document).ready(function(){
+  $("#flip-v").click(function(){
+      $("#panel-v").slideToggle("slow");
   });
 });

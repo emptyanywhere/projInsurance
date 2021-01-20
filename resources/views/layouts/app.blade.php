@@ -15,12 +15,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous"></script>
     <script src="{{ asset('js/customize.js') }}"></script>
 
+    <script src="https://use.fontawesome.com/c6c576ba33.js"></script>
+
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
 </head>
 <body>
     <div id="app">
@@ -79,5 +82,61 @@
             @yield('content')
         </main>
     </div>
+
+
+
+    <!----------- footer ---------->
+    <br><br>
+    
+    <footer class="bg-light text-center text-lg-start" >
+        <!-- Grid container -->
+        <div class="container p-4" style="background-color: rgba(238, 238, 238, 0.952);">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0" >
+              <h5 class="text-uppercase">Footer text</h5>
+      
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+                molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
+                aliquam voluptatem veniam, est atque cumque eum delectus sint!
+              </p>
+            </div>
+            <!--Grid column-->
+      
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Footer text</h5>
+      
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+                molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
+                aliquam voluptatem veniam, est atque cumque eum delectus sint!
+              </p>
+            </div>
+            <!--Grid column-->
+          </div>
+
+            <!-- socialmedia ccontact icon-->
+            <div class="" style="padding-left= 190px;">
+                <center><a href="">rmutt@mail.ac.th</a></center>
+            </div>
+
+          <!--Grid row-->
+        </div>
+
+
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+          © 2020 Copyright:
+          <a class="text-dark" href="">LifeInsurance</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+
 </body>
 </html>

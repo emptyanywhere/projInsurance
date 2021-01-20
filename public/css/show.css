@@ -1,6 +1,6 @@
 .v {
     background-color: rgba(238, 238, 238, 0.952);
-    height: 750px;
+    height: 1050px;
 }
 
 p {
@@ -48,23 +48,62 @@ h3 {
 
 .insurer-age {
     position: relative;
-    background-color: pink;
+    /*background-color: pink;*/
     width: 250PX;
 }
 
-.annuity {
+.item {
     position: relative;
-    background-color: pink;
+    /*background-color: pink;*/
     width: 250px;
 }
 
 table, td, th {
-    border: 1px rgba(238, 238, 238, 0.952);
+    /*border: 1px rgba(238, 238, 238, 0.952);*/
+    border: 1px solid rgb(200, 200, 200);
     width: 50px;
-    height: 105px;
-  }
+    height: 185px;
+}
   
-  table {
+table {
     width: 1100px;
     border-collapse: collapse;
-  }
+}
+
+.fa-user {
+    position: relative;
+    color: rgb(92, 88, 88);
+}
+
+
+
+/*--------- Container no.2 (container b) --------*/
+
+.b {
+    background-color: rgba(238, 238, 238, 0.952);
+    height: 1050px; 
+}
+
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: rgba(238, 238, 238, 0.952);
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+    }
+
+#panel-v, #flip-v {
+    padding: 5px;
+    text-align: center;
+    background-color: rgba(238, 238, 238, 0.952);
+    border: solid 1px #c3c3c3;
+    }
+
+#panel-v {
+    padding: 50px;
+    display: none;
+    }

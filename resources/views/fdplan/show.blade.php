@@ -9,7 +9,13 @@
     <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script> 
 
-    <link rel="stylesheet" type="text/css" href="<?php echo asset('css/show.css')?>"> 
+    <link rel="stylesheet" type="text/css" href="<?php echo asset('css/show.css')?>">
+
+    <script src="https://use.fontawesome.com/c6c576ba33.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
 </head>
 
 </html>
@@ -35,26 +41,26 @@
                 </div>
 
                 <br><h4>ข้อมูลแบบประกัน</h4><br><br>
-                <div class="icon-text" style="background-color: lightblue;">
+                <div class="icon-text" style="background-color: ;">
                     
                     <table>
                         <tr>
                             <td>
                                 <div class="insurer-age">
-                                    <span></span>
+                                    <i class="fa fa-user fa-3x" aria-hidden="true"></i><br><br>
                                     <label>อายุรับประกัน</label>
                                     <p>{{$fdplan->insurer_age}}</p>
                                 </div>
                             </td>
                             <td>
-                                <div class="annuity">
+                                <div class="item">
                                     <span></span>
                                     <label>รับเงินจ่ายคืน</label>
                                     <p>{{$fdplan->annuity}}</p>
                                 </div>
                             </td>
                             <td>
-                                <div class="bonus">
+                                <div class="item">
                                     <span></span>
                                     <label>เงินปันผล</label>
                                     <p>{{$fdplan->bonus}}</p>
@@ -63,21 +69,21 @@
                         </tr>
                         <tr>
                             <td>
-                                <div class="annuity">
+                                <div class="item">
                                     <span></span>
                                     <label>สิทธิลดหย่อนภาษี</label>
                                     <p>{{$fdplan->tax_break}}</p>
                                 </div>
                             </td>
                             <td>
-                                <div class="annuity">
+                                <div class="item">
                                     <span></span>
                                     <label>การซื้อสัญญาเพิ่มเติม</label>
                                     <p>{{$fdplan->add_contract}}</p>
                                 </div>
                             </td>
                             <td>
-                                <div class="annuity">
+                                <div class="item">
                                     <span></span>
                                     <label>การตรวจสุขภาพ</label>
                                     <p>{{$fdplan->health_ck}}</p>
@@ -86,21 +92,21 @@
                         </tr>
                         <tr>
                             <td>
-                                <div class="annuity">
+                                <div class="item">
                                     <span></span>
                                     <label>เงินเอาประกันภัยขั้นต่ำ</label>
                                     <p>{{$fdplan->min_amount}}</p>
                                 </div>
                             </td>
                             <td>
-                                <div class="annuity">
+                                <div class="item">
                                     <span></span>
                                     <label>รูปแบบการชำระเบี้ยประกัน</label>
                                     <p>{{$fdplan->pay_ip_type}}</p>
                                 </div>
                             </td>
                             <td>
-                                <div class="annuity">
+                                <div class="item">
                                     <span></span>
                                     <label>วิธีการชำระเบี้ยประกัน</label>
                                     <p>{{$fdplan->pay_method}}</p>
@@ -114,9 +120,32 @@
 
             <div class="logo">
                 <!-- <img src="{{$fdplan->p_image}}" height=150 width=150> -->
-                <img src="<?php echo asset("images/{$fdplan->p_image}")?>" height=150 width=150>
+                <img src="<?php echo asset("images/logo/{$fdplan->p_image}")?>" height=150 width=150>
             </div>
         </div>
+    </div><br><br>
+
+    <div class="container b">
+        <br>
+        <div class="form-group">
+            <h4>ผลประโยชน์ความคุ้มครอง</h4>
+        </div>
+
+        <br><br>
+        <div class="benefits">
+            <center><img src="<?php echo asset("images/benefits/{$fdplan->policy_ben_pic}")?>" height=550 width=950></center>
+        </div>
+
+        <br><br>
+        <div id="flip">หมายเหตุ</div>
+        <div id="panel"> {{$fdplan->note}} </div>
+
+        
+        <div id="flip-v">ข้อยกเว้นความคุ้มครอง</div>
+        <div id="panel-v"> {{$fdplan->exclusion_cov}} </div>
+
     </div>
+
+
 
 @endsection

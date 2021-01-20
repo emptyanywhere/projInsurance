@@ -89,7 +89,7 @@
                 <div class="input-group">
                     <div class="custom-file">
                         <input type="file" class="custom-file-input" name="policy_ben_pic">
-                        <label class="custom-file-label">เลือกรูปภาพ</label>
+                        <label class="custom-file-label">เลือกรูปภาพ {{$data->policy_ben_pic}}</label>
                     </div>   
                 </div><br>
 
@@ -149,7 +149,7 @@
                 <div class="input-group">
                     <div class="custom-file">
                         <input type="file" class="custom-file-input" name="p_image">
-                        <label class="custom-file-label">เลือกรูปภาพ</label>
+                        <label class="custom-file-label">เลือกรูปภาพ {{$data->p_image}}</label>
                     </div>   
                 </div><br>
 

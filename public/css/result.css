@@ -1,0 +1,61 @@
+h1 {
+    position: relative;
+    /*left: 190px;*/
+}
+
+p {
+    word-wrap: none;
+}
+
+.brand {
+    /*background-color: salmon;*/
+    position: relative;
+    /*left: 190px;*/
+    width: fit-content;
+}
+
+.descript {
+    /*background-color: pink;*/
+    position: relative;
+    /*left: 190px;*/
+    width: max-content;
+}
+
+.logo {
+    /*background-color: bisque;*/
+    position: relative;
+    width: fit-content;
+}
+
+.form-group-text {
+    /*background-color: gainsboro;*/
+    position: absolute;
+    width: fit-content;
+    padding-left: 190px;
+}
+
+
+
+/* ----------- section break ----------*/
+
+.sb {
+    float: left;
+    margin-bottom: .5rem;
+    position: relative;
+    width: 100%;
+  }
+  
+  
+  
+  /* Section Break 5 */
+  .section-break-5 {
+    position: relative;
+    background-color: transparent;
+    border: 0;
+    border-top: 1px solid rgb(200, 200, 200);
+    display: block;
+    height: 0;
+    margin: 3rem auto 3rem;
+    /*text-align: center;*/
+    width: 100%;
+  }
