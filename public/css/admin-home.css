@@ -1,0 +1,18 @@
+.v {
+    position: relative;
+    background-color: rgba(238, 238, 238, 0.952);
+    height: 360px;
+    width: 100%;
+    /*align-content: center;*/
+}
+
+.image {
+    display: block;
+    position: absolute;
+    height: auto;
+    width: 100%;
+}
+
+.link {
+    position: relative;
+}

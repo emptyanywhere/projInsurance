@@ -1,3 +1,12 @@
+<DOCTYPE! html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="<?php echo asset('css/admin-home.css')?>"> 
+</head>
+
+</html>
+
 @extends('layouts.app')
 
 @section('content')
@@ -22,13 +31,12 @@
 </div>
 
 <br><br>
-<div class="container v" 
-    style="
-        background-color: rgba(238, 238, 238, 0.952);
-        height: 400px;
-    ">
+<div class="container v" align="center">
+
+    <!-- <img src="images/sky.png" class="image"> -->
+    
     <div class="link" align="center">
-        <br><br>
+        <br><br><br><br><br><br>
         <a href="/administrator"><h4> --> ไปที่หน้าแรกของระบบแอดมิน </h2></a>
     </div>
 </div>
