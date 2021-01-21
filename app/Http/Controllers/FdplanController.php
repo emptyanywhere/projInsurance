@@ -102,7 +102,8 @@ class FdplanController extends Controller
         $request->validate([
             'p_brand'=>'required',
             'p_name'=>'required',
-            'p_descript'=>'required', 
+            'p_descript'=>'required',
+            //'p_image'=>'required',
             'pay_ins_pre'=>'required',
             'protection'=>'required',
             'age'=>'required',
