@@ -25,14 +25,14 @@
                 <div class="form-group">
                     <label class="col-l-2 control-label">อายุ</label>
                     <div class="col-l-4">
-                        <input type="interger" class="form-control" name="age" placeholder="เริ่มที่ 0 ปี">
+                        <input type="number" class="form-control" name="age" placeholder="">
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label class="col-l-2 control-label">รายได้สุทธิ/ปี</label>
                     <div class="col-l-4">
-                        <input type="interger" class="form-control" name="net_income" placeholder="">
+                        <input type="text" class="form-control" name="net_income" placeholder="">
                     </div>
                 </div>
                 

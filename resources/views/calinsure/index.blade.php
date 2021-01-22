@@ -53,9 +53,9 @@
             <div class="col-md-6">
                 <div class="form-group-rate" align="left" id="rate">ทุนประกันที่ต้องการ
                     {!! Form::label('') !!}
-                    {!! Form::text('premium_rate', NULL, 
+                    {!! Form::text('insurance_fund', NULL, 
                         $attributes = array('class' => 'form-control insf',
-                        'name' => 'prer',
+                        'name' => 'insf',
                             'id' => 'n1'
                         )
                     ) !!}
