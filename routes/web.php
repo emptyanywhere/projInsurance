@@ -30,7 +30,7 @@ Route::resource('calinsure', 'CalinsureController');
 
 Route::resource('conditionform', 'ConditionformController');
 
-Route::resource('fdplan', 'FdplanController')->middleware('auth');
+Route::resource('fdplan', 'FdplanController');
 
 Route::get('/search', 'PageController@search');
 /*Route::get('/search', 'SearchController@store');

@@ -12,6 +12,14 @@ class FdplanController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    public function __construct()
+    {
+        $this->middleware(['auth'])->only('index');
+        $this->middleware(['auth'])->only('create');
+        $this->middleware(['auth'])->only('edit');
+    }
+
     public function index()
     {
         $data = Fdplan::all();
