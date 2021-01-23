@@ -40,3 +40,5 @@ Route::resource('search', 'SearchController');
 //Route::resource('result', 'SearchController');
 Route::get('/result', 'PageController@result');
 Route::resource('result', 'ResultController');
+
+Route::get('/page/nlist', 'PageController@nlist');

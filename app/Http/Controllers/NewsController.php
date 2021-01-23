@@ -18,6 +18,12 @@ class NewsController extends Controller
         return view('news.index', compact(['data']));
     }
 
+    public function nlist()
+    {
+        $data=News::all();
+        return view('news.list', compact(['data']));
+    }
+
     /**
      * Show the form for creating a new resource.
      *

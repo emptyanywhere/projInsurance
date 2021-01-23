@@ -151,7 +151,7 @@
 
                     <div class="links">
                         <a href="http://127.0.0.1:8000/search">ค้นหาแผนประกัน</a>
-                        <a href="">ข้อมูลข่าวสาร</a>
+                        <a href="/page/nlist">ข้อมูลข่าวสาร</a>
                         <a href="/calinsure/">คำนวณเบี้ยประกัน</a>
                         <a href="">ช่องทางติดต่อ</a>
                     </div>
