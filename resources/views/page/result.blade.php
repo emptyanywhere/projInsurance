@@ -16,6 +16,7 @@
 
 @extends('layouts.app')
 @section('content')
+<br><br><br><br>
 
     @forelse($fdplans as $fdplan)
         <div class="container" align="float-left" style="background-color: ;">
