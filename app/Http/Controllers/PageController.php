@@ -3,18 +3,23 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\news;
 
 class PageController extends Controller
 {
-    public function search(){
+    public function search()
+    {
         return view('page.search');
     }
     
-    public function result(){
+    public function result()
+    {
         return view('page.result');
     }
 
-    public function nlist(){
-        return view('page.nlist');
+    public function nlist()
+    {
+        $data=News::all();
+        return view('page.nlist', compact(['data']));
     }
 }

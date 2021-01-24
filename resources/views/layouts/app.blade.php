@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>LifeInsurance</title>
+  <title>ViewLife</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -50,7 +50,7 @@
     <header id="header" class="fixed-top">
       <div class="container d-flex align-items-center">
   
-        <h1 class="logo mr-auto"><a href="{{ url('/') }}">LifeInsurance</a></h1>
+        <h1 class="logo mr-auto"><a href="{{ url('/') }}">ViewLife</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
   
@@ -76,16 +76,19 @@
                 @endif
             @else
                 <li class="drop-down">
-                    <a href="#" role="button" data-toggle="dropdown" aria-haspopup="true" v-pre>
+                    <a href="/administrator" role="button" data-toggle="dropdown" aria-haspopup="true" v-pre>
                         {{ Auth::user()->username }}
                     </a>
 
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+
+                        <a class="dropdown-item" href="/administrator">หน้าแอดมิน</a>
                         <a class="dropdown-item" href="{{ route('logout') }}"
                             onclick="event.preventDefault();
                                           document.getElementById('logout-form').submit();">
                             {{ __('ออกจากระบบ') }}
                         </a>
+                        
 
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                             @csrf
@@ -93,21 +96,20 @@
                     </div>
                 </li>
             @endguest
-  
           </ul>
         </nav><!-- .nav-menu -->
   
       </div>
     </header><!-- End Header -->
 
-    <br><br><br><br>
+    
     
     <main class="py-4">
         @yield('content')
     </main>
   
 
-    <br><br>
+    
     <!-- ======= Footer ======= -->
     <footer id="footer">
   
@@ -116,7 +118,7 @@
           <div class="row">
   
             <div class="col-lg-3 col-md-6 footer-contact">
-              <h3>OnePage</h3>
+              <h3>ViewLife</h3>
               <p>
                 A108 Adam Street <br>
                 New York, NY 535022<br>

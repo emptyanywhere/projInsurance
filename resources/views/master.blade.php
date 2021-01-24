@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>LifeInsurance</title>
+  <title>ViewLife</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -50,7 +50,7 @@
     <header id="header" class="fixed-top">
       <div class="container d-flex align-items-center">
   
-        <h1 class="logo mr-auto"><a href="{{ url('/') }}">LifeInsurance</a></h1>
+        <h1 class="logo mr-auto"><a href="{{ url('/') }}">ViewLife</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
   
@@ -64,34 +64,19 @@
               </ul>
             </li>
 
-            @guest
+            @if (Route::has('login'))
                 <li class="nav-item">
-                    <a class="nav-item" href="{{ route('login') }}">{{ __('เข้าสู่ระบบ') }}</a>
-                </li>
-                @if (Route::has('register'))
-                    <li class="drop-down">
-                        <a class="drop-down" href="{{ route('register') }}">{{ __('ลงทะเบียน') }}</a>
-                    </li>
-                @endif
-            @else
-                <li class="drop-down">
-                    <a href="#" role="button" data-toggle="dropdown" aria-haspopup="true" v-pre>
-                        {{ Auth::user()->username }}
-                    </a>
+                    @auth
+                        <a href="{{ url('/home') }}">ระบบแอดมิน</a>
+                    @else
+                        <a href="{{ route('login') }}">เข้าสู่ระบบ</a>
 
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="{{ route('logout') }}"
-                            onclick="event.preventDefault();
-                                          document.getElementById('logout-form').submit();">
-                            {{ __('ออกจากระบบ') }}
-                        </a>
-
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                            @csrf
-                        </form>
-                    </div>
+                        @if (Route::has('register'))
+                            <a href="{{ route('register') }}">ลงทะเบียน</a>
+                        @endif
+                    @endauth
                 </li>
-            @endguest
+            @endif
   
           </ul>
         </nav><!-- .nav-menu -->
@@ -279,7 +264,7 @@
   
         </div>
       </section><!-- End Sevices Section -->
-    -->
+
   
     </main><!-- End #main -->
   
@@ -291,7 +276,7 @@
           <div class="row">
   
             <div class="col-lg-3 col-md-6 footer-contact">
-              <h3>OnePage</h3>
+              <h3>ViewLife</h3>
               <p>
                 A108 Adam Street <br>
                 New York, NY 535022<br>
@@ -361,21 +346,6 @@
   
     <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
     <div id="preloader"></div>
-  
-    <!-- Vendor JS Files 
-    
-    <script src="assets/vendor/jquery/jquery.min.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-    <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-    <script src="assets/vendor/counterup/counterup.min.js"></script>
-    <script src="assets/vendor/venobox/venobox.min.js"></script>
-    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    
-    -->
     
   
     <!-- Template Main JS File -->

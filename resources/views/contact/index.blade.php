@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+<br><br><br><br>
 
     <div class="container">
         <h2 align="center">ข้อมูลผู้ดูแลระบบ</h2>

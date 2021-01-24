@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+<br><br><br><br>
 
 <center><h2>เพิ่มข้อมูลผู้ติดต่อ</h2></center>
 

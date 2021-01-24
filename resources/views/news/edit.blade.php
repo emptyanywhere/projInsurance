@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+<br><br><br><br>
 
 <center><h2>แก้ไขข้อมูลข่าวสาร</h2></center>
 

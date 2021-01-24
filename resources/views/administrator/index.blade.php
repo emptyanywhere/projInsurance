@@ -65,9 +65,11 @@
     </head>
     <body>
         <div class="flex-center position-ref full-height">
+
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
+                        <a href="{{ url('/') }}">หน้าผู้ใช้</a>
                         <a href="{{ url('/home') }}">ระบบแอดมิน</a>
                     @else
                         <a href="{{ route('login') }}">เข้าสู่ระบบ</a>

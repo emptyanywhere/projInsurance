@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+<br><br><br><br>
 
 <center><h2>เพิ่มข้อมูลแผนประกันและเงื่อนไข</h2></center>
 

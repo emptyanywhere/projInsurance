@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-
+<br><br><br><br>
     <div class="container">
         <h2 align="center">ข้อมูลแผนประกัน</h2>
         <a href="/insplan/create" class="btn btn-primary my-2">เพิ่มแผนประกัน</a>
