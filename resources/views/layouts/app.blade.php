@@ -120,41 +120,40 @@
             <div class="col-lg-3 col-md-6 footer-contact">
               <h3>ViewLife</h3>
               <p>
-                A108 Adam Street <br>
-                New York, NY 535022<br>
-                United States <br><br>
-                <strong>Phone:</strong> +1 5589 55488 55<br>
-                <strong>Email:</strong> info@example.com<br>
+                36/572 Pruksa 12/1 <br>
+                Wall Maria, Trost section 12120<br>
+                Eldia, Paradis Island <br><br>
+                <strong>Phone:</strong> 088-222-5579<br>
+                <strong>Email:</strong> 1160109050881@mail.ac.th<br>
               </p>
             </div>
   
             <div class="col-lg-2 col-md-6 footer-links">
               <h4>Useful Links</h4>
               <ul>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">ค้นหาเบี้ยประกัน</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">ข้อมูลข่าวสาร</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">คำนวณเบี้ยประกัน</a></li>
               </ul>
             </div>
   
             <div class="col-lg-3 col-md-6 footer-links">
-              <h4>Our Services</h4>
+              <h4>คณะกรรมการ</h4>
               <ul>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">ดร.พิทยา พุ่มพวง</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">ดร.จุฬาลักษณ์ วัฒนานนท์</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">ผศ.เมธา ศิริกูล</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">อ.สิริณา ช่วยเต็ม</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">อ.ปิยนันท์ </a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">อ.ประภาส ทองรัก</a></li>
               </ul>
             </div>
   
             <div class="col-lg-4 col-md-6 footer-newsletter">
-              <h4>Join Our Newsletter</h4>
-              <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+              <h4>สมัครรับข่าวสาร</h4>
+              <p>ข้อมูลแผนประกันชีวิตเพื่อการสะสมทรัพย์ จากบริษัทชั้นนำของประเทศไทย</p> 
               <form action="" method="post">
-                <input type="email" name="email"><input type="submit" value="Subscribe">
+                <input type="email" name="email"><input type="submit" value="สมัครรับข้อมูล">
               </form>
             </div>
   
@@ -166,7 +165,7 @@
   
         <div class="mr-md-auto text-center text-md-left">
           <div class="copyright">
-            &copy; Copyright <strong><span>OnePage</span></strong>. All Rights Reserved
+            &copy; Copyright <strong><span>ViewLife</span></strong>. All Rights Reserved
           </div>
           <div class="credits">
             <!-- All the links in the footer should remain intact. -->

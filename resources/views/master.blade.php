@@ -102,7 +102,7 @@
             <div class="icon-box">
               <div class="icon"><i class="ri-stack-line"></i></div>
               <h4 class="title"><a href="http://127.0.0.1:8000/search">ค้นหาแผนประกัน</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+              <p class="description">ค้นหาแบบประกันชีวิตเพื่อการสะสมทรัพย์ ผ่านการกรอกเงื่อนไขของผู้ใช้งาน เช่น อายุ รายได้สุทธิต่อปีและอื่นๆ</p>
             </div>
           </div>
   
@@ -110,7 +110,7 @@
             <div class="icon-box">
               <div class="icon"><i class="ri-palette-line"></i></div>
               <h4 class="title"><a href="/page/nlist">ข้อมูลข่าวสาร</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+              <p class="description">ข้อมูลข่าวสาร ความรู้ที่เกี่ยวกับแผนประกันในหลากหลายประเภท จากเว็บไซต์บทความคุณภาพต่างๆ</p>
             </div>
           </div>
   
@@ -118,7 +118,7 @@
             <div class="icon-box">
               <div class="icon"><i class="ri-command-line"></i></div>
               <h4 class="title"><a href="/calinsure">คำนวณเบี้ยประกัน</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+              <p class="description">วางแผนการเงินก่อนทำแผนประกันง่ายๆ จากการทดลองคำนวณ</p>
             </div>
           </div>
   
@@ -126,7 +126,7 @@
             <div class="icon-box">
               <div class="icon"><i class="ri-fingerprint-line"></i></div>
               <h4 class="title"><a href="">ช่องทางติดต่อ</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+              <p class="description">ช่องทางการติดต่อสำหรับปรึกษาด้านการเขียนโปรแกรมโดยใช้ ภาษา PHP ด้วย Laravel framework</p>
             </div>
           </div>
   
@@ -142,28 +142,27 @@
   
           <div class="section-title">
             <h2>About Us</h2>
-            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. </p>
+            <p>โปรเจคนักศึกษาชั้นปีที่ 4 สาขาวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์และเทคโนโลยี มหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี </p>
           </div>
   
           <div class="row content">
             <div class="col-lg-6">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
+                วัตถุประสงค์ ระบบสนับสนุนการตัดสินใจซื้อแบบประกันเพื่อการสะสมทรัพย์ มีดังนี้
               </p>
               <ul>
-                <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-                <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
-                <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+                <li><i class="ri-check-double-line"></i> พัฒนาเว็บแอปพลิเคชั่นใช้ค้นหาแผนประกันที่เหมาะสมตามเงื่อนไขผู้ใช้</li>
+                <li><i class="ri-check-double-line"></i> พัฒนาเว็บแอปพลิเคชั่นที่สามารถรายงานข่าวสารเกี่ยวกับแผนประกัน<br>ผ่านบทความจากหลากหลายเว็บไซต์</li>
+                <li><i class="ri-check-double-line"></i> พัฒนาเว็บแอปพลิเคชั่นที่สามารถคำนวณเบี้ยประกันเพื่อความสะดวกในการวางแผนการทำประกันของผู้ใข้งาน</li>
               </ul>
             </div>
             <div class="col-lg-6 pt-4 pt-lg-0">
               <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                culpa qui officia deserunt mollit anim id est laborum.
+                ภาษาที่ใช้พัฒนาเว็บแอปพลิเคชั่นคือ ภาษา PHP เวอรชั่น 7 เฟรมเวิร์คที่ใช้ Laravel เวอร์ชั่น 7, database ทดลองผ่าน phpmyadmin, 
+                โปรแกรมที่ใช้จำลอง server คือ XAMPP version 3.2.4, ระบบปฏิบัติการ Windows 10 Pro 64bit, เทมเพลตที่ใช้คือ Bootstrapmade,
+                package bootstrap version 4, sweetalert, jquery, fontawesome และอื่นๆ 
               </p>
-              <a href="#" class="btn-learn-more">Learn More</a>
+              <a href="#" class="btn-learn-more">อ่านเพิ่มเติม</a>
             </div>
           </div>
   
@@ -278,41 +277,40 @@
             <div class="col-lg-3 col-md-6 footer-contact">
               <h3>ViewLife</h3>
               <p>
-                A108 Adam Street <br>
-                New York, NY 535022<br>
-                United States <br><br>
-                <strong>Phone:</strong> +1 5589 55488 55<br>
-                <strong>Email:</strong> info@example.com<br>
+                36/572 Pruksa 12/1 <br>
+                Wall Maria, Trost section 12120<br>
+                Eldia, Paradis Island <br><br>
+                <strong>Phone:</strong> 088-222-5579<br>
+                <strong>Email:</strong> 1160109050881@mail.ac.th<br>
               </p>
             </div>
   
             <div class="col-lg-2 col-md-6 footer-links">
-              <h4>Useful Links</h4>
+              <h4>หน้าผู้ใช้งาน</h4>
               <ul>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">ค้นหาเบี้ยประกัน</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">ข้อมูลข่าวสาร</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">คำนวณเบี้ยประกัน</a></li>
               </ul>
             </div>
   
             <div class="col-lg-3 col-md-6 footer-links">
-              <h4>Our Services</h4>
+              <h4>คณะกรรมการ</h4>
               <ul>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">ดร.พิทยา พุ่มพวง (อ.ที่ปรึกษา)</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">ดร.จุฬาลักษณ์ วัฒนานนท์</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">ผศ.เมธา ศิริกูล</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">อ.สิริณา ช่วยเต็ม</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">อ.ปิยนันท์ เทียบศรไชย</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">อ.ประภาส ทองรัก</a></li>
               </ul>
             </div>
   
             <div class="col-lg-4 col-md-6 footer-newsletter">
-              <h4>Join Our Newsletter</h4>
-              <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+              <h4>สมัครรับข่าวสาร</h4>
+              <p>ข้อมูลแผนประกันชีวิตเพื่อการสะสมทรัพย์ จากบริษัทชั้นนำของประเทศไทย</p> 
               <form action="" method="post">
-                <input type="email" name="email"><input type="submit" value="Subscribe">
+                <input type="email" name="email"><input type="submit" value="สมัครรับข้อมูล">
               </form>
             </div>
   
@@ -324,7 +322,7 @@
   
         <div class="mr-md-auto text-center text-md-left">
           <div class="copyright">
-            &copy; Copyright <strong><span>OnePage</span></strong>. All Rights Reserved
+            &copy; Copyright <strong><span>ViewLife</span></strong>. All Rights Reserved
           </div>
           <div class="credits">
             <!-- All the links in the footer should remain intact. -->

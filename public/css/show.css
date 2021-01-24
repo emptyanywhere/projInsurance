@@ -1,10 +1,12 @@
 .v {
-    background-color: rgba(238, 238, 238, 0.952);
-    height: 1050px;
+    background-color: rgba(248, 248, 248, 0.952);
+    height: 850px;
 }
 
 p {
     color: grey;
+    /*background: salmon;*/
+    width: fit-content;
 }
 
 .form-group-text {
@@ -20,6 +22,7 @@ p {
 h3 {
     position: relative;
     padding-left: 190px;
+    width: 100%;
 }
 
 .pay-pro {
@@ -39,11 +42,23 @@ h3 {
 
 
 
-    /* ------------ icon and infomation ------------*/
+    /* ------------ icon and infomation & table ------------*/
+
+table, td, th {
+    /*border: 1px rgba(238, 238, 238, 0.952);*/
+    border: 1px solid rgb(223, 220, 220);
+    /*width: 50px;
+    height: 185px;*/
+}
+    
+table {
+    border-collapse: collapse;
+}
 
 .icon-text {
-    position: relative;
-    width: 1100px;
+    /*background-color: lightblue;*/
+    align-items: center;
+    width: 100%;
 }
 
 .insurer-age {
@@ -55,26 +70,55 @@ h3 {
 .item {
     position: relative;
     /*background-color: pink;*/
-    width: 250px;
+    width: 100%;
 }
 
-table, td, th {
-    /*border: 1px rgba(238, 238, 238, 0.952);*/
-    border: 1px solid rgb(200, 200, 200);
-    width: 50px;
-    height: 185px;
-}
-  
-table {
-    width: 1100px;
-    border-collapse: collapse;
-}
 
+/* อายุรับประกัน */
 .fa-user {
     position: relative;
-    color: rgb(92, 88, 88);
+    color: rgb(33, 125, 179);
 }
 
+/* รับเงินจ่ายคืน */
+.fa-hand-holding-usd {
+    color: rgb(33, 125, 179);
+}
+
+/* เงินปันผล */
+.fa-coins {
+    color: rgb(33, 125, 179);
+}
+
+/* สิทธิลดหย่อนภาษี */
+.fa-funnel-dollar {
+    color: rgb(33, 125, 179);
+}
+
+/* การซื้อสัญญาเพิ่มเติม */
+.fa-file-contract {
+    color: rgb(33, 125, 179);
+}
+
+/* การตรวจสุขภาพ */
+.fa-notes-medical {
+    color: rgb(33, 125, 179);
+}
+
+/* เงินเอาประกันภัยขั้นต่ำ*/
+.fa-comments-dollar {
+    color: rgb(33, 125, 179);
+}
+
+/* รูปแบบการชำระเบี้ยประกัน */
+.fa-receipt {
+    color: rgb(33, 125, 179);
+}
+
+/* วิธีการชำระเบี้ยประกัน */
+.fa-credit-card {
+    color: rgb(33, 125, 179);
+}
 
 
 /*--------- Container no.2 (container b) --------*/
@@ -94,16 +138,20 @@ table {
 #panel {
     padding: 50px;
     display: none;
-    }
+}
 
 #panel-v, #flip-v {
     padding: 5px;
     text-align: center;
     background-color: rgba(238, 238, 238, 0.952);
     border: solid 1px #c3c3c3;
-    }
+}
 
 #panel-v {
     padding: 50px;
     display: none;
-    }
+}
+
+.benefits {
+    position: relative;
+}

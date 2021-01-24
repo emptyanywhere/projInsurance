@@ -9,7 +9,9 @@
     <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script> 
 
+    <link href="images/favicon.png" rel="icon">
     <link rel="stylesheet" type="text/css" href="<?php echo asset('css/search.css')?>"> 
+
 </head>
 
 </html>
@@ -21,7 +23,7 @@
             <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
                 
                 <div class="section-title">
-                    <h3 align="center">กรอกข้อมูลเงื่อนไขของท่าน</h3>
+                    <h2 align="center">กรอกข้อมูลเงื่อนไขของท่าน</h2>
                 </div>
 
                 <div class="row" style="background-color: ;">

@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link href="images/favicon.png" rel="icon">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script> 
@@ -54,7 +56,11 @@
 
         @empty
             <div class="" align="center">
-                No search results found
+                <div class="section-title">
+                    <br><br><br><br>
+                    <h2 align="center">No search results found</h2>
+                    <br><br><br><br><br>
+                </div>
             </div>
 
     @endforelse
