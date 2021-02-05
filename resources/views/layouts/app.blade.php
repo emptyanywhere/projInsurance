@@ -58,12 +58,12 @@
           <ul>
             
             <li class="drop-down"><a href="">เมนู</a>
-                <ul>
-                  <li><a href="#">ค้นหาแผนประกัน</a></li>
-                  <li><a href="#">ข้อมูลข่าวสาร</a></li>
-                  <li><a href="#">คำนวณเบี้ยประกัน</a></li>
-                </ul>
-              </li>
+              <ul>
+                <li><a href="http://127.0.0.1:8000/search">ค้นหาแผนประกัน</a></li>
+                <li><a href="/page/nlist">ข้อมูลข่าวสาร</a></li>
+                <li><a href="/calinsure">คำนวณเบี้ยประกัน</a></li>
+              </ul>
+            </li>
 
             @guest
                 <li class="nav-item">
@@ -123,17 +123,17 @@
                 36/572 Pruksa 12/1 <br>
                 Wall Maria, Trost section 12120<br>
                 Eldia, Paradis Island <br><br>
-                <strong>Phone:</strong> 088-222-5579<br>
+                <strong>Phone:</strong> 088-222-xxxx<br>
                 <strong>Email:</strong> 1160109050881@mail.ac.th<br>
               </p>
             </div>
   
             <div class="col-lg-2 col-md-6 footer-links">
-              <h4>Useful Links</h4>
+              <h4>หน้าผู้ใช้งาน</h4>
               <ul>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">ค้นหาเบี้ยประกัน</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">ข้อมูลข่าวสาร</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">คำนวณเบี้ยประกัน</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="http://127.0.0.1:8000/search">ค้นหาเบี้ยประกัน</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="/page/nlist">ข้อมูลข่าวสาร</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="/calinsure">คำนวณเบี้ยประกัน</a></li>
               </ul>
             </div>
   

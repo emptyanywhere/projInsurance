@@ -7,11 +7,17 @@
 
     <link href="images/favicon.png" rel="icon">
 
+    <link rel="stylesheet" type="text/css" href="<?php echo asset('css/show.css')?>">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <script src="{{asset('js/show_product.js')}}"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script> 
 
-    <link rel="stylesheet" type="text/css" href="<?php echo asset('css/show.css')?>">
+    
 
     <script src="https://kit.fontawesome.com/bc08b5fff6.js" crossorigin="anonymous"></script> <!-- https://fontawesome.com/ -->
 
@@ -147,12 +153,24 @@
         </div>
 
         <br><br>
-        <div id="flip">หมายเหตุ</div>
-        <div id="panel"> {{$fdplan->note}} </div>
+        <div class="flip-note"><h4>หมายเหตุ</h4></div>
+        <div class="panel-note"> {{$fdplan->note}} </div><br><br>
 
-        
-        <div id="flip-v">ข้อยกเว้นความคุ้มครอง</div>
-        <div id="panel-v"> {{$fdplan->exclusion_cov}} </div>
+        <!--
+        <div id="flip-en"><h4>ข้อยกเว้นความคุ้มครอง</h4></div>
+        <div id="panel-en"> {{$fdplan->exclusion_cov}} </div> -->
+
+        <center>
+            <div class="w3-cor" style="width:75%">
+                <button onclick="myFunction('Demo4')" class="w3-button w3-block">
+                    <h5>ข้อยกเว้นความคุ้มครอง <i class="fas fa-chevron-down"></i>  </h5>
+                </button>
+                <div id="Demo4" class="w3-hide w3-container">
+                  <p>{{$fdplan->exclusion_cov}}</p>
+                </div>
+            </div>
+        </center>
+
 
     </div>
 

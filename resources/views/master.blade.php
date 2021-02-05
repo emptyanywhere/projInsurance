@@ -58,9 +58,9 @@
           <ul>
             <li class="drop-down"><a href="">เมนู</a>
               <ul>
-                <li><a href="#">ค้นหาแผนประกัน</a></li>
-                <li><a href="#">ข้อมูลข่าวสาร</a></li>
-                <li><a href="#">คำนวณเบี้ยประกัน</a></li>
+                <li><a href="http://127.0.0.1:8000/search">ค้นหาแผนประกัน</a></li>
+                <li><a href="/page/nlist">ข้อมูลข่าวสาร</a></li>
+                <li><a href="/calinsure">คำนวณเบี้ยประกัน</a></li>
               </ul>
             </li>
 
@@ -94,7 +94,7 @@
           </div>
         </div>
         <div class="text-center">
-          <a href="#about" class="btn-get-started scrollto">Search</a>
+          <a href="http://127.0.0.1:8000/search" class="btn-get-started scrollto">Search</a>
         </div>
   
         <div class="row icon-boxes">
@@ -108,7 +108,7 @@
   
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
-              <div class="icon"><i class="ri-palette-line"></i></div>
+              <div class="icon"><i class="ri-article-line"></i></div>
               <h4 class="title"><a href="/page/nlist">ข้อมูลข่าวสาร</a></h4>
               <p class="description">ข้อมูลข่าวสาร ความรู้ที่เกี่ยวกับแผนประกันในหลากหลายประเภท จากเว็บไซต์บทความคุณภาพต่างๆ</p>
             </div>
@@ -116,7 +116,7 @@
   
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="400">
             <div class="icon-box">
-              <div class="icon"><i class="ri-command-line"></i></div>
+              <div class="icon"><i class="ri-calculator-line"></i></div>
               <h4 class="title"><a href="/calinsure">คำนวณเบี้ยประกัน</a></h4>
               <p class="description">วางแผนการเงินก่อนทำแผนประกันง่ายๆ จากการทดลองคำนวณ</p>
             </div>
@@ -124,7 +124,7 @@
   
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="500">
             <div class="icon-box">
-              <div class="icon"><i class="ri-fingerprint-line"></i></div>
+              <div class="icon"><i class="ri-contacts-line"></i></div>
               <h4 class="title"><a href="">ช่องทางติดต่อ</a></h4>
               <p class="description">ช่องทางการติดต่อสำหรับปรึกษาด้านการเขียนโปรแกรมโดยใช้ ภาษา PHP ด้วย Laravel framework</p>
             </div>
@@ -280,7 +280,7 @@
                 36/572 Pruksa 12/1 <br>
                 Wall Maria, Trost section 12120<br>
                 Eldia, Paradis Island <br><br>
-                <strong>Phone:</strong> 088-222-5579<br>
+                <strong>Phone:</strong> 088-222-xxxx<br>
                 <strong>Email:</strong> 1160109050881@mail.ac.th<br>
               </p>
             </div>
@@ -288,9 +288,9 @@
             <div class="col-lg-2 col-md-6 footer-links">
               <h4>หน้าผู้ใช้งาน</h4>
               <ul>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">ค้นหาเบี้ยประกัน</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">ข้อมูลข่าวสาร</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">คำนวณเบี้ยประกัน</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="http://127.0.0.1:8000/search">ค้นหาเบี้ยประกัน</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="/page/nlist">ข้อมูลข่าวสาร</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="/calinsure">คำนวณเบี้ยประกัน</a></li>
               </ul>
             </div>
   

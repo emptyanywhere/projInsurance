@@ -36,8 +36,10 @@ h3 {
 }
 
 .descript {
+    /*background-color: salmon;*/
     position: relative;
     padding-left: 190px;
+    width: 1050px;
 }
 
 
@@ -124,34 +126,20 @@ table {
 /*--------- Container no.2 (container b) --------*/
 
 .b {
-    background-color: rgba(238, 238, 238, 0.952);
-    height: 1050px; 
-}
-
-#panel, #flip {
-    padding: 5px;
-    text-align: center;
-    background-color: rgba(238, 238, 238, 0.952);
-    border: solid 1px #c3c3c3;
-}
-
-#panel {
-    padding: 50px;
-    display: none;
-}
-
-#panel-v, #flip-v {
-    padding: 5px;
-    text-align: center;
-    background-color: rgba(238, 238, 238, 0.952);
-    border: solid 1px #c3c3c3;
-}
-
-#panel-v {
-    padding: 50px;
-    display: none;
+    /*background-color: rgba(238, 238, 238, 0.952);*/
+    background-color: rgba(248, 248, 248, 0.952);
+    height: 1250px; 
 }
 
 .benefits {
-    position: relative;
+    position: unset;
+}
+
+.fa-chevron-down{
+    color: rgb(33, 125, 179);
+}
+
+.w3-cor{
+    color: rgb(33, 125, 179);
+    border: rgb(33, 125, 179);
 }
