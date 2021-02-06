@@ -18,6 +18,9 @@
 
   <script src="{{asset('js/jquery-3.5.1.min.js')}}"></script>
   <script src="{{asset('js/main.js')}}"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous"></script>
+  <script src="{{ asset('js/customize.js') }}"></script>
 
     <link rel="stylesheet" href="{{asset("vendor/bootstrap/css/bootstrap.min.css")}}">
     <link rel="stylesheet" href="{{asset("vendor/icofont/icofont.min.css")}}">
@@ -144,7 +147,7 @@
                 <li><i class="bx bx-chevron-right"></i> <a href="#">ดร.จุฬาลักษณ์ วัฒนานนท์</a></li>
                 <li><i class="bx bx-chevron-right"></i> <a href="#">ผศ.เมธา ศิริกูล</a></li>
                 <li><i class="bx bx-chevron-right"></i> <a href="#">อ.สิริณา ช่วยเต็ม</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">อ.ปิยนันท์ </a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">อ.ปิยนันท์ เทียบศรไชย</a></li>
                 <li><i class="bx bx-chevron-right"></i> <a href="#">อ.ประภาส ทองรัก</a></li>
               </ul>
             </div>
@@ -192,6 +195,9 @@
     <!-- Template Main JS File -->
     
     <script src="{{asset('js/main.js')}}"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous"></script>
+    <script src="{{ asset('js/customize.js') }}"></script>
   
   </body>
 
