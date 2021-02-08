@@ -111,7 +111,7 @@ class FdplanController extends Controller
             'p_brand'=>'required',
             'p_name'=>'required',
             'p_descript'=>'required',
-            //'p_image'=>'required',
+            'p_image'=>'required',
             'pay_ins_pre'=>'required',
             'protection'=>'required',
             'age'=>'required',
@@ -129,7 +129,7 @@ class FdplanController extends Controller
             'min_amount'=>'required',
             'tax_break'=>'required',
             'pay_method'=>'required',
-            //'policy_ben_pic'=>'required',
+            'policy_ben_pic'=>'required',
             'note'=>'required',
             'exclusion_cov'=>'required',
         ]);

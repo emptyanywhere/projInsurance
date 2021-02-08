@@ -50,6 +50,7 @@ class SearchController extends Controller
 
         return view('page.search', [
             'age' => $ages,
+            'net_income' => $net_incomes,
             'health_ck' => $health_cks,
             'divident' => $dividents,
             'saving_goals' => $saving_goals,

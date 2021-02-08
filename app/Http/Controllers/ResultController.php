@@ -31,7 +31,8 @@ class ResultController extends Controller
 
         $zero = 0;
         $seventy = array('70', '71', '72', '73', '74');
-        $seventyfive = array('75', '76', '77', '78', '79'); 
+        //$seventyfive = array('75', '76', '77', '78', '79'); 
+        $seventyfive = 75;
         $eighty = 80; 
         
         //$fdplans = Fdplan::query();
@@ -73,9 +74,22 @@ class ResultController extends Controller
             else{
                 //
             }
-
         }
-        
+
+        /*$ten = 10;
+        $hundred= 100; 
+        $net_ten_percent = ($net_incomes*$ten)/$hundred;*/
+
+        foreach($net_incomes as $key=>$value)
+        {
+            $net_ten_percent = ($value*10)/100;
+        }
+
+        if($request->filled('net_income'))
+        {
+            $fdplan->where('min_amount', '<=', $net_ten_percent);
+        }
+
         
         if($request->filled('divident')){
             $fdplan->where('divident', $request->divident);
@@ -97,6 +111,7 @@ class ResultController extends Controller
 
         return view('page.result', [
             'age' => $ages,
+            'net_income' => $net_incomes,
             'health_ck' => $health_cks,
             'divident' => $dividents,
             'saving_goals' => $saving_goals,
