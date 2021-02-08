@@ -30,6 +30,7 @@ Route::resource('calinsure', 'CalinsureController');
 
 Route::resource('conditionform', 'ConditionformController');
 
+Route::get('/searchdata', 'FdplanController@searchdata');
 Route::resource('fdplan', 'FdplanController');
 
 Route::get('/search', 'PageController@search');

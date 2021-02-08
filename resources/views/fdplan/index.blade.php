@@ -7,10 +7,10 @@
         <a href="/fdplan/create" class="btn btn-primary my-2">เพิ่มแผนประกัน</a>
         <br><br>
 
-        <form action="/search" method="POST" role="search">
+        <form action="{{ url('/searchdata')}}" method="get" role="search">
             {{ csrf_field() }}
             <div class="input-group">
-                <input type="text" class="form-control" name="q"
+                <input type="search" class="form-control" name="search"
                     placeholder="ค้นหาแผนประกัน"> <span class="input-group-btn">
                     <button type="submit" class="btn btn-primary">
                         <!-- <span class="glyphicon glyphicon-search"></span> -->

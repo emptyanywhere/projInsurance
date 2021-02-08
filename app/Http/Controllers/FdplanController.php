@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Fdplan;
+use DB;
 
 class FdplanController extends Controller
 {
@@ -148,5 +149,23 @@ class FdplanController extends Controller
     {
         Fdplan::find($id)->delete();
         return redirect('/fdplan');
+    }
+
+    public function searchdata(Request $request)
+    {
+        /*$search_text = $_GET['query'];
+        $data = Fdplan::where('title', 'LIKE', '%'.$search_text.'%')->with()->get();
+
+        return view('fdplan.index', compact(['data']));*/
+
+        /*$search = $request->get('search');
+        $data = DB::table('fdplans')->where('p_name', 'like', '%'.$search.'%')->paginate(10);
+
+        return view('fdplan.index', ['fdplans' => $data]);*/
+
+        $search = $request->get('search');
+        $data = DB::table('fdplans')->where('p_name', 'like', '%'.$search.'%')->paginate(10);
+
+        return view('fdplan.index', compact(['data']));
     }
 }
