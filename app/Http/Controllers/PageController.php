@@ -22,4 +22,9 @@ class PageController extends Controller
         $data=News::all();
         return view('page.nlist', compact(['data']));
     }
+
+    public function teaminfo()
+    {
+        return view('page.teaminfo');
+    }
 }

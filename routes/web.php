@@ -43,3 +43,5 @@ Route::get('/result', 'PageController@result');
 Route::resource('result', 'ResultController');
 
 Route::get('/page/nlist', 'PageController@nlist');
+
+Route::get('/page/teaminfo', 'PageController@teaminfo');

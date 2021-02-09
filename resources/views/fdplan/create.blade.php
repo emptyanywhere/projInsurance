@@ -67,7 +67,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="">เงินปันผล</label>
+                    <label class="">เงินปันผล+เงื่อนไข</label>
                         {!! Form::text('bonus', NULL, ["class" => "form-control"]) !!}
                 </div>
 
