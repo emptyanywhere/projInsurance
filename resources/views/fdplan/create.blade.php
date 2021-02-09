@@ -101,7 +101,7 @@
 
                 <div class="form-group">
                     <label class="">ข้อยกเว้นความคุ้มครอง</label>
-                        {!! Form::text('exclusion_cov', NULL, ["class" => "form-control"]) !!}
+                        {!! Form::textarea('exclusion_cov', NULL, ["class" => "form-control"]) !!}
                 </div>
 
 

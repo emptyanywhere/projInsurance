@@ -127,8 +127,9 @@ table {
 
 .b {
     /*background-color: rgba(238, 238, 238, 0.952);*/
-    background-color: rgba(248, 248, 248, 0.952);
-    height: 1250px; 
+    /*background-color: rgba(248, 248, 248, 0.952);*/
+    background-color: unset;
+    height: 1650px; 
 }
 
 .benefits {

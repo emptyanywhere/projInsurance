@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use App\Fdplan;
-use DB;
+
 
 class FdplanController extends Controller
 {
@@ -23,8 +24,10 @@ class FdplanController extends Controller
 
     public function index()
     {
-        $data = Fdplan::all();
-        return view('fdplan.index', compact(['data']));
+        /*$data = Fdplan::all();
+        return view('fdplan.index', compact(['data']));*/
+        $data = DB::table('fdplans')->paginate(7);
+        return view('fdplan.index', ['fdplans' => $data]);
     }
 
     /**
@@ -164,8 +167,8 @@ class FdplanController extends Controller
         return view('fdplan.index', ['fdplans' => $data]);*/
 
         $search = $request->get('search');
-        $data = DB::table('fdplans')->where('p_name', 'like', '%'.$search.'%')->paginate(10);
+        $data = DB::table('fdplans')->where('p_name', 'like', '%'.$search.'%')->paginate(7);
 
-        return view('fdplan.index', compact(['data']));
+        return view('fdplan.index', ['fdplans' => $data]);
     }
 }
