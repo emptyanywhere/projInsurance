@@ -26,7 +26,7 @@
                     <h2 align="center">กรอกข้อมูลเงื่อนไขของท่าน</h2>
                 </div>
 
-                <div class="row" style="background-color: ;">
+                <div class="row-4" style="background-color:;" >
 
                     {!! Form::open(['action' => 'ResultController@index', 'method' => 'GET']) !!}
                         <div class="form-group">
