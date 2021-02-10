@@ -1,12 +1,11 @@
 .v {
     background-color: rgba(248, 248, 248, 0.952);
-    height: 850px;
+    height: 350px;
     width: 100%;
 }
 
 p {
     color: grey;
-    /*background: salmon;*/
     width: fit-content;
 }
 
@@ -18,6 +17,13 @@ p {
 .logo {
     position: relative;
     padding-top: 20px;
+}
+
+.logo-02 {
+    position: relative;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h3 {
@@ -36,6 +42,11 @@ h3 {
     padding-left: 190px;
 }
 
+.brand-02 {
+    position: relative;
+    padding-left: 0px;
+}
+
 .descript {
     /*background-color: salmon;*/
     position: relative;
@@ -43,19 +54,136 @@ h3 {
     width: 1050px;
 }
 
+.descript-02{
+    position: relative;
+    padding-left: 0px;
+    width: 1050px;
+}
 
+
+
+
+/*-------------- customize ------------------*/
+
+.planinfo .box-cus-02 {
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(238, 238, 238, 0.945);
+    box-shadow: 0px 50px 90px 50px rgba(80, 89, 95, 0.1);
+  }
+  
+  .planinfo .box-cus-02 h3 {
+    font-weight: 400;
+    padding: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #124265;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .planinfo .box-cus-02 .logo-02 {
+    position: relative;
+  }
+
+  .planinfo .box-cus-02 h3.p-name {
+    color: rgb(33, 125, 179);
+    font-size: 27px;
+    position: relative;
+  }
+  
+  .planinfo .box-cus-02 h4 {
+    font-size: 42px;
+    color: #2487ce;
+    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 20px;
+  }
+  
+  .planinfo .box-cus-02 h4 sup {
+    font-size: 20px;
+    top: -15px;
+    left: -3px;
+  }
+  
+  .planinfo .box-cus-02 h4 span {
+    color: #bababa;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  
+  .planinfo .box-cus-02 ul {
+    padding: 0;
+    list-style: none;
+    color: #124265;
+    text-align: left;
+    line-height: 20px;
+    font-size: 14px;
+  }
+  
+  .planinfo .box-cus-02 ul li {
+    padding-bottom: 16px;
+  }
+
+/*--------------------- pay-pro -------------------------*/
+
+  .planinfo .box-cus-02 .counts {
+    padding: 0px;
+  }
+
+  .planinfo .box-cus-02 .count-box {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .planinfo .box-cus-02 .count-box span {
+    font-size: 48px;
+    line-height: 48px;
+    display: block;
+    font-weight: 700;
+    color: #124265;
+    margin-left: 80px;
+    margin: auto;
+  }
+  
+  .planinfo .box-cus-02 .count-box{
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #1e6ca6;
+    position: relative;
+  }
+
+  p.pay {
+      /*background-color: lightblue;*/
+    padding-left: 65px;
+    padding-top: 10px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #1e6ca6;
+    position: relative;
+  }
 
     /* ------------ icon and infomation & table ------------*/
 
 table, td, th {
     /*border: 1px rgba(238, 238, 238, 0.952);*/
     border: 1px solid rgb(223, 220, 220);
-    /*width: 50px;
-    height: 185px;*/
 }
     
 table {
     border-collapse: collapse;
+    width: 100%;
+}
+
+p.ann {
+    word-break: break-all;
 }
 
 .icon-text {
@@ -79,13 +207,16 @@ table {
 
 /* อายุรับประกัน */
 .fa-user {
-    position: relative;
     color: rgb(33, 125, 179);
+    position: relative;
+    width: 100%;
 }
 
 /* รับเงินจ่ายคืน */
 .fa-hand-holding-usd {
     color: rgb(33, 125, 179);
+    position: relative;
+    width: 100%;
 }
 
 /* เงินปันผล */

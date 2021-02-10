@@ -33,17 +33,61 @@
 @extends('layouts.app')
 @section('content')
 
-    <!-- ======= รายละเอียดแผนประกันแบบกลุ่ม ======= -->
-    <section id="testimonials" class="testimonials">
+    <!-- ======= ชื่อแผนประกัน ======= -->
+    <section id="pricing" class="planinfo">
         <div class="container" data-aos="fade-up">
   
-          <div class="section-title">
-            <h2>แผนประกัน</h2>
-          </div>
+            <div class="section-title">
+                <h2>แผนประกัน</h2>
+            </div>
+
+            <div class="col mt-lg-0" data-aos="zoom-in" data-aos-delay="100">
+                <div class="box-cus-02">
+
+                    <div class="form-group-text">
+                        <h3 class="p-name">{{$fdplan->p_name}}</h3>
+                    </div><br><br><br><br><br>
+
+                    <div class="row">
+                        <div class="logo-02">
+                            <img src="<?php echo asset("images/logo/{$fdplan->p_image}")?>" height=150 width=150>
+                        </div>
+                    </div><br>
+                    
+                    <div class="row">
+                        <div class="col-lg-3 col-md-5 col-6 d-md-flex" style="margin-left: 20%; margin-right: 9%;">
+                            <div class="count-box">
+                              <span data-toggle="counter-up">{{$fdplan->pay_ins_pre}}</span>
+                              <p class="pay">จ่ายเบี้ยประกัน(ปี)</p>
+                            </div>
+                        </div>
+    
+                        <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+                            <div class="count-box">
+                              <span data-toggle="counter-up">{{$fdplan->protection}}</span>
+                              <p class="pay">ความคุ้มครอง(ปี)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="brand-02">
+                        <h3>{{$fdplan->p_brand}}</h3>
+                    </div>
+
+                    <div class="descript-02">
+                        <ul>
+                            <li>{{$fdplan->p_descript}}</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
   
+        <!--
             <div class="container v">
                 <div class="form-group">
                     <div class="form-group-text">
+                        
                         <h3 style="color: rgb(33, 125, 179);">{{$fdplan->p_name}}</h3>
     
                         <div class="pay-pro">
@@ -57,7 +101,7 @@
                         <div class="descript">
                             <p>{{$fdplan->p_descript}}</p>
                         </div>
-    
+                        
                         <br><h4>ข้อมูลแบบประกัน</h4><br><br>
 
                         <div class="icon-text">
@@ -138,17 +182,126 @@
                                     </div>
                                 </div>
                             </div>
+                        
                         </div>
                     </div>
     
                     <div class="logo">
-                        <!-- <img src="{{$fdplan->p_image}}" height=150 width=150> -->
                         <img src="<?php echo asset("images/logo/{$fdplan->p_image}")?>" height=150 width=150>
                     </div>
                 </div>
             </div>
+        -->
         </div>
-    </section><!-- End รายละเอียดแผนประกันแบบกลุ่ม Section -->
+    </section><!-- End Section -->
+
+    <!-- ======= ข้อมูลแผนประกันแบบแยกหมวดหมู้ Section ======= -->
+    <section id="pricing" class="pricing">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-title">
+            <h2>ข้อมูลแบบประกัน</h2>
+          </div>
+  
+            <div class="row">
+                <div class="col-lg-4 col-md-6" data-aos="zoom-im" data-aos-delay="100">
+                    <div class="box">
+                        <i class="fa fa-user fa-3x" aria-hidden="true"></i><br>
+                        <h3>อายุรับประกัน</h3>
+                        <ul>
+                        <li>{{$fdplan->insurer_age}}</li>
+                        </ul>
+                    </div>
+                </div>
+  
+                <div class="col-lg-4 col-md-6 mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="box">
+                        <i class="fas fa-hand-holding-usd fa-3x"></i><br>
+                        <h3>รับเงินจ่ายคืน</h3>
+                        <ul>
+                        <li>{{$fdplan->annuity}}</li>
+                        </ul>
+                    </div>
+                </div>
+  
+                <div class="col-lg-4 col-md-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="box">
+                        <i class="fas fa-coins fa-3x"></i><br>
+                        <h3>เงินปันผล</h3>
+                        <ul>
+                        <li>{{$fdplan->bonus}}</li>
+                        </ul>
+                    </div>
+                </div>
+  
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="box">
+                        <i class="fas fa-funnel-dollar fa-3x"></i><br>
+                        <h3>สิทธิลดหย่อนภาษี</h3>
+                        <ul>
+                        <li>{{$fdplan->tax_break}}</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="box">
+                        <i class="fas fa-file-contract fa-3x"></i><br>
+                        <h3>การซื้อสัญญาเพิ่มเติม</h3>
+                        <ul>
+                        <li>{{$fdplan->add_contract}}</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="box">
+                        <i class="fas fa-notes-medical fa-3x"></i><br>
+                        <h3>การตรวจสุขภาพ</h3>
+                        <ul>
+                        <li>{{$fdplan->health_ck}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="box">
+                        <i class="fas fa-comments-dollar fa-3x"></i><br>
+                        <h3>เงินเอาประกันภัยขั้นต่ำ</h3>
+                        <ul>
+                        <li>{{$fdplan->min_amount}}</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="box">
+                        <i class="fas fa-receipt fa-3x"></i><br>
+                        <h3>รูปแบบการชำระเบี้ยประกัน</h3>
+                        <ul>
+                        <li>{{$fdplan->pay_ip_type}}</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="box">
+                        <i class="far fa-credit-card fa-3x"></i><br>
+                        <h3>วิธีการชำระเบี้ยประกัน</h3>
+                        <ul>
+                        <li>{{$fdplan->pay_method}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+              
+        </div>
+      </section><!-- End Pricing Section -->
 
     <!-- ======= รูปภาพผลประโยชน์ความคุ้มครอง ======= -->
     <section id="testimonials" class="testimonials">

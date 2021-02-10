@@ -35,7 +35,6 @@
     
     <script src="{{asset('vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 
-
   <link rel="stylesheet" type="text/css" href="<?php echo asset('css/opstyle.css')?>">
 
   
@@ -198,6 +197,13 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous"></script>
     <script src="{{ asset('js/customize.js') }}"></script>
+
+    <script src="{{asset('vendor/jquery.easing/jquery.easing.min.js')}}"></script>
+    <script src="{{asset('vendor/php-email-form/validate.js')}}"></script>
+    <script src="{{asset('vendor/waypoints/jquery.waypoints.min.js')}}"></script>
+    <script src="{{asset('vendor/venobox/venobox.min.js')}}"></script>
+    <script src="{{asset('vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+    <script src="{{asset('vendor/counterup/counterup.min.js')}}"></script>
   
   </body>
 
