@@ -76,7 +76,7 @@
 
                     <div class="descript-02">
                         <ul>
-                            <li>{{$fdplan->p_descript}}</li>
+                            <p>{{$fdplan->p_descript}}</p>
                         </ul>
                     </div>
 
@@ -301,7 +301,7 @@
             </div>
               
         </div>
-      </section><!-- End Pricing Section -->
+    </section><!-- End Pricing Section -->
 
     <!-- ======= รูปภาพผลประโยชน์ความคุ้มครอง ======= -->
     <section id="testimonials" class="testimonials">

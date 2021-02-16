@@ -57,7 +57,9 @@ h3 {
 .descript-02{
     position: relative;
     padding-left: 0px;
-    width: 1050px;
+    /* width: 1050px; */
+
+    width: 100%;
 }
 
 
