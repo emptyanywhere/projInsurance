@@ -58,7 +58,7 @@
           <ul>
             <li class="drop-down"><a href="">เมนู</a>
               <ul>
-                <li><a href="http://127.0.0.1:8000/search">ค้นหาแผนประกัน</a></li>
+                <li><a href="/search">ค้นหาแผนประกัน</a></li>
                 <li><a href="/page/nlist">ข้อมูลข่าวสาร</a></li>
                 <li><a href="/calinsure">คำนวณเบี้ยประกัน</a></li>
               </ul>
@@ -101,7 +101,7 @@
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
               <div class="icon"><i class="ri-stack-line"></i></div>
-              <h4 class="title"><a href="http://127.0.0.1:8000/search">ค้นหาแผนประกัน</a></h4>
+              <h4 class="title"><a href="/search">ค้นหาแผนประกัน</a></h4>
               <p class="description">ค้นหาแบบประกันชีวิตเพื่อการสะสมทรัพย์ ผ่านการกรอกเงื่อนไขของผู้ใช้งาน เช่น อายุ รายได้สุทธิต่อปีและอื่นๆ</p>
             </div>
           </div>
@@ -288,7 +288,7 @@
             <div class="col-lg-2 col-md-6 footer-links">
               <h4>หน้าผู้ใช้งาน</h4>
               <ul>
-                <li><i class="bx bx-chevron-right"></i> <a href="http://127.0.0.1:8000/search">ค้นหาเบี้ยประกัน</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="/search">ค้นหาเบี้ยประกัน</a></li>
                 <li><i class="bx bx-chevron-right"></i> <a href="/page/nlist">ข้อมูลข่าวสาร</a></li>
                 <li><i class="bx bx-chevron-right"></i> <a href="/calinsure">คำนวณเบี้ยประกัน</a></li>
               </ul>

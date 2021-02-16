@@ -19,7 +19,7 @@ class PageController extends Controller
 
     public function nlist()
     {
-        $data=News::all();
+        $data = news::all();
         return view('page.nlist', compact(['data']));
     }
 
