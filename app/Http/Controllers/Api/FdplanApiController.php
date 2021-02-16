@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Api;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Fdplan;
+use App\Http\Resources\FdplanResource;
+use App\Http\Resources\FdplanCollection;
 
 class FdplanApiController extends Controller
 {
@@ -15,8 +17,14 @@ class FdplanApiController extends Controller
      */
     public function index()
     {
-        $fdplans = Fdplan::all();
-        return response()->json($fdplans);
+         //$fdplans = Fdplan::all();
+        $fdplan = Fdplan::paginate(10);
+        // unset($fdplan['note']); // now not work
+
+        // return response()->json($fdplans);
+        // return new FdplanResource($fdplans); //not work becuase called in show function.//must use collection instance
+        // return FdplanResource::Collection($fdplans); // FdplanResource::{medthod}({agrument}) //worked but not recommend
+        return new FdplanCollection($fdplan);
     }
 
     /**
@@ -36,9 +44,10 @@ class FdplanApiController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Fdplan $fdplan)
     {
-        return response()->json(['id' => $id]);
+        // return response()->json($fdplan);
+        return new FdplanResource($fdplan);
     }
 
     /**
