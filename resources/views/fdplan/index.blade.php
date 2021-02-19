@@ -11,7 +11,7 @@
             {{ csrf_field() }}
             <div class="input-group">
                 <input type="search" class="form-control" name="search"
-                    placeholder="ค้นหาแผนประกัน"> <span class="input-group-btn">
+                    placeholder="ค้นหาจากชื่อแผนประกัน"> <span class="input-group-btn">
                     <button type="submit" class="btn btn-primary">
                         <!-- <span class="glyphicon glyphicon-search"></span> -->
                         ค้นหา

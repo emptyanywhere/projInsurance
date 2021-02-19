@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Contact; /*เพิ่มทัหลังเพื่ออ้างอิง ถ้าไม่เพิ่มคำสั่ง request หาไฟล์ contact ไม่เจอ*/ 
+// use App\Contact; /*เพิ่มทัหลังเพื่ออ้างอิง ถ้าไม่เพิ่มคำสั่ง request หาไฟล์ contact ไม่เจอ*/ 
+use App\User;
 
 class ContactController extends Controller
 {
@@ -14,7 +15,8 @@ class ContactController extends Controller
      */
     public function index()
     {
-        $data = Contact::all(); //queryดึงข้อมูลมาจาก Model Contact , เก็บไว้ที่ $data 
+        // $data = Contact::all(); //queryดึงข้อมูลมาจาก Model Contact , เก็บไว้ที่ $data 
+        $data = User::all();
         return view('contact.index', compact(['data'])); //  , ส่งข้อมูลไปที่ view index
     }
 
@@ -100,7 +102,8 @@ class ContactController extends Controller
      */
     public function destroy($id)
     {
-        Contact::find($id)->delete();
+        // Contact::find($id)->delete();
+        User::find($id)->delete();
         return redirect('/contact');
     }
 }

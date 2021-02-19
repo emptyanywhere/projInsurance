@@ -69,14 +69,14 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/') }}">หน้าผู้ใช้</a>
+                        {{-- <a href="{{ url('/') }}">หน้าผู้ใช้</a> --}}
                         <a href="{{ url('/home') }}">ระบบแอดมิน</a>
                     @else
                         <a href="{{ route('login') }}">เข้าสู่ระบบ</a>
 
-                        @if (Route::has('register'))
+                        {{-- @if (Route::has('register'))
                             <a href="{{ route('register') }}">ลงทะเบียน</a>
-                        @endif
+                        @endif --}}
                     @endauth
                 </div>
             @endif
@@ -87,10 +87,10 @@
                 </div>
 
                 <div class="links">
-                    <a href="/insplan">แก้ไขข้อมูลแผนประกันแบบย่อ</a>
-                    <a href="/fdplan">แก้ไขแผนประกันและเงื่อนไข</a>
-                    <a href="/news">แก้ไขข้อมูลข่าวสาร</a>
-                    <a href="/contact">แก้ไขข้อมูลผู้ดูแลระบบ</a>
+                    {{-- <a href="/insplan">แก้ไขข้อมูลแผนประกันแบบย่อ</a> --}}
+                    <a href="/fdplan">จัดการข้อมูลแผนประกันและเงื่อนไข</a>
+                    <a href="/news">จัดการข้อมูลข่าวสาร</a>
+                    <a href="/contact">จัดการข้อมูลผู้ดูแลระบบ</a>
                 </div>
             </div>
         </div>

@@ -4,7 +4,7 @@
 
     <div class="container">
         <h2 align="center">ข้อมูลผู้ดูแลระบบ</h2>
-        <a href="/contact/create" class="btn btn-primary my-2">เพิ่มผู้ดูแลระบบ</a>
+        <a href="{{ route('register') }}" class="btn btn-primary my-2">เพิ่มผู้ดูแลระบบ</a>
         <br><br>
 
         <table class="table">
@@ -12,9 +12,11 @@
                 <tr>
                 <th scope="col">รหัส</th>
                 <th scope="col">ชื่อ</th>
+                {{-- <th scope="col">อีเมล</th>
+                <th scope="col">โทรศัพท์</th> --}}
+                <th scope="col">ชื่อเข้าสู่ระบบ</th>
                 <th scope="col">อีเมล</th>
-                <th scope="col">โทรศัพท์</th>
-                <th scope="col">แก้ไข</th>
+                {{-- <th scope="col">แก้ไข</th> --}}
                 <th scope="col">ลบ</th>
                 </tr>
             </thead>
@@ -23,11 +25,13 @@
                 <tr>
                 <th scope="row">{{$row->id}}</th>
                 <td>{{$row->name}}</td>
+                {{-- <td>{{$row->email}}</td>
+                <td>{{$row->phone}}</td> --}}
+                <td>{{$row->username}}</td>
                 <td>{{$row->email}}</td>
-                <td>{{$row->phone}}</td>
-                <td>
+                {{-- <td>
                     <a href="{{route('contact.edit', $row->id)}}" class="btn btn-secondary">แก้ไข</a>
-                </td>
+                </td> --}}
                 <td>
                 <!--
                     <form action="{{route('contact.destroy', $row->id)}}" method="post">

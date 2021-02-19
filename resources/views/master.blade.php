@@ -71,9 +71,9 @@
                     @else
                         <a href="{{ route('login') }}">เข้าสู่ระบบ</a>
 
-                        @if (Route::has('register'))
+                        {{-- @if (Route::has('register'))
                             <a href="{{ route('register') }}">ลงทะเบียน</a>
-                        @endif
+                        @endif --}}
                     @endauth
                 </li>
             @endif
@@ -94,7 +94,7 @@
           </div>
         </div>
         <div class="text-center">
-          <a href="http://127.0.0.1:8000/search" class="btn-get-started scrollto">Search</a>
+          <a href="/search" class="btn-get-started scrollto">Search</a>
         </div>
   
         <div class="row icon-boxes">
@@ -288,7 +288,7 @@
             <div class="col-lg-2 col-md-6 footer-links">
               <h4>หน้าผู้ใช้งาน</h4>
               <ul>
-                <li><i class="bx bx-chevron-right"></i> <a href="/search">ค้นหาเบี้ยประกัน</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="/search">ค้นหาแผนประกันประกัน</a></li>
                 <li><i class="bx bx-chevron-right"></i> <a href="/page/nlist">ข้อมูลข่าวสาร</a></li>
                 <li><i class="bx bx-chevron-right"></i> <a href="/calinsure">คำนวณเบี้ยประกัน</a></li>
               </ul>

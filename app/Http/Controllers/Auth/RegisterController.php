@@ -38,7 +38,8 @@ class RegisterController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('guest');
+        // $this->middleware('guest'); //เอาออกเพื่อทำ register ในขณะที่เข้าสู่ระบบแล้ว
+        $this->middleware('auth');
     }
 
     /**

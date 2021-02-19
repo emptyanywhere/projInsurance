@@ -9,6 +9,9 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
+  <!-- CSRF Token -->
+  <meta name="csrf-token" content="{{ csrf_token() }}">
+
   <!-- Favicons -->
   <link href="images/favicon.png" rel="icon">
   <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
@@ -61,7 +64,7 @@
             
             <li class="drop-down"><a href="">เมนู</a>
               <ul>
-                <li><a href="http://127.0.0.1:8000/search">ค้นหาแผนประกัน</a></li>
+                <li><a href="/search">ค้นหาแผนประกัน</a></li>
                 <li><a href="/page/nlist">ข้อมูลข่าวสาร</a></li>
                 <li><a href="/calinsure">คำนวณเบี้ยประกัน</a></li>
               </ul>
@@ -71,11 +74,6 @@
                 <li class="nav-item">
                     <a class="nav-item" href="{{ route('login') }}">{{ __('เข้าสู่ระบบ') }}</a>
                 </li>
-                @if (Route::has('register'))
-                    <li class="drop-down">
-                        <a class="drop-down" href="{{ route('register') }}">{{ __('ลงทะเบียน') }}</a>
-                    </li>
-                @endif
             @else
                 <li class="drop-down">
                     <a href="/administrator" role="button" data-toggle="dropdown" aria-haspopup="true" v-pre>
@@ -85,13 +83,15 @@
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
 
                         <a class="dropdown-item" href="/administrator">หน้าแอดมิน</a>
+
+                        <a class="dropdown-item" href="{{ route('register') }}">ลงทะเบียน</a>
+
                         <a class="dropdown-item" href="{{ route('logout') }}"
                             onclick="event.preventDefault();
                                           document.getElementById('logout-form').submit();">
                             {{ __('ออกจากระบบ') }}
                         </a>
                         
-
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                             @csrf
                         </form>
@@ -133,7 +133,7 @@
             <div class="col-lg-2 col-md-6 footer-links">
               <h4>หน้าผู้ใช้งาน</h4>
               <ul>
-                <li><i class="bx bx-chevron-right"></i> <a href="http://127.0.0.1:8000/search">ค้นหาเบี้ยประกัน</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="/search">ค้นหาแผนประกัน</a></li>
                 <li><i class="bx bx-chevron-right"></i> <a href="/page/nlist">ข้อมูลข่าวสาร</a></li>
                 <li><i class="bx bx-chevron-right"></i> <a href="/calinsure">คำนวณเบี้ยประกัน</a></li>
               </ul>
