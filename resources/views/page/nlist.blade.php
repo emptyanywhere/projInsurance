@@ -35,7 +35,7 @@
                         </svg>
                         <i class="bx bx-file"></i>
                     </div>
-                    <h4><a href="">{{$row->article_name}}</a></h4>
+                    <h4><a href="{{$row->content}}">{{$row->article_name}}</a></h4>
                     <p>{{$row->abstract}}</p><br>
                     <p><a style="color: rgb(33, 125, 179);">ผู้เขียน:</a> {{$row->author}}</p>
                     <p><a style="color: rgb(33, 125, 179);">จากเว็บไซต์:</a> {{$row->content}} </p>
