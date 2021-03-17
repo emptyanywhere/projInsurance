@@ -70,12 +70,14 @@
                         <a href="{{ url('/home') }}">ระบบแอดมิน</a>
                     @else
                         <a href="{{ route('login') }}">เข้าสู่ระบบ</a>
+                </li>
 
-                        {{-- @if (Route::has('register'))
+                <li class="nav-item">
+                    {{-- @if (Route::has('register'))
                             <a href="{{ route('register') }}">ลงทะเบียน</a>
                         @endif --}}
-                    @endauth
                 </li>
+                    @endauth    
             @endif
   
           </ul>
