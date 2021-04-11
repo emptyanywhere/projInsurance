@@ -92,9 +92,9 @@
 
                 <div class="links">
                     {{-- <a href="/insplan">แก้ไขข้อมูลแผนประกันแบบย่อ</a> --}}
-                    <a href="/fdplan">จัดการข้อมูลแผนประกันและเงื่อนไข</a>
-                    <a href="/news">จัดการข้อมูลข่าวสาร</a>
-                    <a href="/contact">จัดการข้อมูลผู้ดูแลระบบ</a>
+                    <a href="/fdplan" class="btn btn-light">จัดการข้อมูลแผนประกันและเงื่อนไข</a>
+                    <a href="/news" class="btn btn-light">จัดการข้อมูลข่าวสาร</a>
+                    <a href="/contact" class="btn btn-light">จัดการข้อมูลผู้ดูแลระบบ</a>
                 </div>
             </div>
         </div>

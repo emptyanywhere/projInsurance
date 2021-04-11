@@ -39,7 +39,7 @@
                     {!! Form::text('detail', $data->detail, ["class" => "form-control"]) !!}
                 </div>
 
-                <input type="submit" value="อัพเดท" class="btn btn-primary">
+                <input type="submit" value="อัปเดต" class="btn btn-primary">
                 <a href="/insplan" class='btn btn-dark'>ย้อนกลับ</a>
 
             </div>

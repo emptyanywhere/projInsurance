@@ -21,22 +21,22 @@
             <div class="col-md-6">
 
                 <div class="form-group">
-                    {!! Form::label('Title') !!}
+                    <label>ชื่อเรื่อง</label>
                     {!! Form::text('article_name', NULL, ["class" => "form-control"]) !!}
                 </div>
 
                 <div class="form-group">
-                    {!! Form::label('Abstract') !!}
+                    <label>ข้อมูลโดยย่อ</label>
                     {!! Form::text('abstract', NULL, ["class" => "form-control"]) !!}
                 </div>
 
                 <div class="form-group">
-                    {!! Form::label('Content') !!}
+                    <label>แหล่งที่มา (url)</label>
                     {!! Form::text('content', NULL, ["class" => "form-control"]) !!}
                 </div>
 
                 <div class="form-group">
-                    {!! Form::label('Author') !!}
+                    <label>ผู้เขียน</label>
                     {!! Form::text('author', NULL, ["class" => "form-control"]) !!}
                 </div>
 

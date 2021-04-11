@@ -94,7 +94,8 @@
                         <div class="form-group" style="background-color: ;" align="center">
                             <div class="col-l-4" align="center">
                                 <input type="submit" class="btn btn-primary" name="" value="ยืนยัน">
-                                <input type="reset" class="btn btn-secondary" name="" value="รีเซต">
+                                <input type="reset" class="btn btn-warning" name="" value="รีเซต">
+                                <input type="reset" class="btn btn-secondary" name="" value="ย้อนกลับ">
                             </div>
                         </div>
         

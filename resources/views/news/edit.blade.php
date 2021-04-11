@@ -20,26 +20,26 @@
             <div class="col-md-6">
 
                 <div class="form-group">
-                    {!! Form::label('Title') !!}
+                    <label>ชื่อเรื่อง</label>
                     {!! Form::text('article_name', $data->article_name, ["class" => "form-control"]) !!}
                 </div>
 
                 <div class="form-group">
-                    {!! Form::label('Abstract') !!}
+                    <label>ข้อมูลโดยย่อ</label>
                     {!! Form::text('abstract', $data->abstract, ["class" => "form-control"]) !!}
                 </div>
 
                 <div class="form-group">
-                    {!! Form::label('Content') !!}
+                    <label>แหล่งที่มา (url)</label>
                     {!! Form::text('content', $data->content, ["class" => "form-control"]) !!}
                 </div>
 
                 <div class="form-group">
-                    {!! Form::label('Author') !!}
+                    <label>ผู้เขียน</label>
                     {!! Form::text('author', $data->author, ["class" => "form-control"]) !!}
                 </div>
 
-                <input type="submit" value="อัพเดท" class="btn btn-primary">
+                <input type="submit" value="อัปเดต" class="btn btn-primary">
                 <a href="/news" class='btn btn-dark'>ย้อนกลับ</a>
 
             </div>

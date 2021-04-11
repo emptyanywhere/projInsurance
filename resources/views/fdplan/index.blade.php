@@ -24,7 +24,7 @@
         <table class="table">
             <thead class="thead-light">
                 <tr>
-                <th scope="col">รหัส</th>
+                {{-- <th scope="col">รหัส</th> --}}
                 <th scope="col">รูป</th>
                 <th scope="col">บริษัท</th>
                 <th scope="col">ชื่อแผน</th>
@@ -48,7 +48,7 @@
             <tbody>
             @foreach($fdplans as $data)
                 <tr>
-                <th scope="row">{{$data->id}}</th>
+                {{-- <th scope="row">{{$data->id}}</th> --}}
                 <td>{{$data->p_image}}</td>
                 <td>{{$data->p_brand}}</td>
                 <td>{{$data->p_name}}</td>

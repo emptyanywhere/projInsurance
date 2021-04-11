@@ -74,12 +74,21 @@
 
                 <br><br>
                 <button type="button" class="btn btn-primary" onclick="calc();">คำนวณ</button>
-                <input type=="text" id="result"/> <- เบี้ยประกันที่ต้องจ่ายต่อปี
+                <input type=="text" id="result" style="text-align: right;"/> เบี้ยประกันที่ต้องจ่ายต่อปี
             </div>
             
-            <br><br><br><br><br>
+            <br><br><br><br>
             <a href="{{ url('/') }}" class='btn btn-dark'>ย้อนกลับ</a>
+
         </div>    
+
+        <br>
+        <div class="container">
+            <p>
+                &emsp;&emsp; หมายเหตุ <br>ทุนประกัน คือ จำนวนเงินที่ใช้เป็นความคุ้มครองให้แก่เรา <br>   
+                         อัตราเบี้ยประกัน สามารถขอได้จากตัวแทน บริษัทเป็นผู้กำหนด(โดยคำนวนจากอัตรามรณะของประชากรไ่ทย)
+            </p>
+        </div>
 
     </body>
 </html>

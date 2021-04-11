@@ -34,7 +34,7 @@
                     {!! Form::text('phone', $data->phone, ["class" => "form-control"]) !!}
                 </div>
 
-                <input type="submit" value="อัพเดท" class="btn btn-primary">
+                <input type="submit" value="อัปเดต" class="btn btn-primary">
                 <a href="/contact" class='btn btn-dark'>ย้อนกลับ</a>
 
             </div>
